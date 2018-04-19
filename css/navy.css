@@ -211,7 +211,7 @@ body {
   -webkit-flex: 0 1;
   -ms-flex: 0 1;
   flex: 0 1;
-  margin-right: 150px;
+  margin-right: 220px;
 }
 #logo {
   text-indent: 101%;
@@ -522,6 +522,76 @@ body {
 .info-feature-desc {
   text-align: left;
   line-height: 24px;
+}
+#intro-feature-background {
+  color: #3577ff;
+  font-size: 24px;
+  line-height: 40px;
+  margin: 80px;
+}
+#subject-wrap {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 74px;
+  padding-bottom: 70px;
+}
+#subject-wrap .subject-title {
+  background: url("https://qpic.url.cn/feeds_pic/ajNVdqHZLLDah4qaGjOfkteepVOBfqPpc2KQ4RqkQ5mbIicicibZXxrtA/") no-repeat;
+  width: 543px;
+  height: 67px;
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+.subject-main {
+  background: url("https://qpic.url.cn/feeds_pic/Q3auHgzwzM7I1jBYfDiaKXmlb4CrubsCjJagqiaLDLR1qmHwPetwFyww/") no-repeat;
+  width: 1196px;
+  height: 280px;
+  margin-bottom: 14px;
+}
+.subject-main .subject-main-title {
+  color: #fff;
+  font-size: 32px;
+  font-weight: bold;
+  padding: 60px 0 30px 0;
+  border-bottom: 1px dashed #fff;
+  width: 312px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.subject-main .subject-main-content {
+  font-size: 16px;
+  color: #fff;
+  width: 600px;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 24px;
+}
+.subject-branch {
+  float: left;
+  width: 388px;
+  height: 264px;
+  background-color: #fff;
+  margin-right: 16px;
+  margin-bottom: 128px;
+}
+.subject-branch .subject-branch-title {
+  color: #3577ff;
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 46px;
+  padding-bottom: 28px;
+  border-bottom: 1px dashed #ddd;
+  margin: 0 32px;
+  margin-bottom: 20px;
+}
+.subject-branch .subject-branch-content {
+  margin: 0 32px;
+  text-align: left;
+  line-height: 24px;
+  font-size: 16px;
+}
+.no-margin {
+  margin-right: 0;
 }
 #intro-user-wrap {
   margin: 0 auto;
