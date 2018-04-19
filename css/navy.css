@@ -157,16 +157,12 @@ body {
 #article-toc-inner:after {
   clear: both;
 }
-@media screen {
-  .inner,
-  #article-toc-inner {
-    padding: 0 20px;
-  }
-}
 #content-wrap {
   background: #fff;
-  border-top: 1px solid #161d24;
-  border-bottom: 1px solid #161d24;
+  margin: -1px 0;
+}
+#gray-content-wrap {
+  background: #f8f8f9;
   margin: -1px 0;
 }
 #header {
@@ -556,7 +552,8 @@ body {
   margin: 0 auto;
 }
 .partner-item {
-  display: inline-block;
+  float: left;
+  padding: 5px;
 }
 #sidebar {
   width: 220px;
