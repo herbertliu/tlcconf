@@ -1569,9 +1569,22 @@ a.article-title:hover {
 }
 @media screen and (min-width: 769px) {
   #footer-links {
-    float: right;
+    float: left;
     margin-top: 0;
+    width: 350px;
   }
+}
+#footer-links .footer-subtitle {
+  margin-bottom: 26px;
+}
+#footer-links li {
+  margin-bottom: 12px;
+  color: #bbb;
+}
+.footer-subtitle {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 16px;
 }
 .footer-link {
   position: relative;
@@ -1592,28 +1605,16 @@ a.article-title:hover {
   width: 200px;
   border-radius: 2px;
 }
-.footer-link .wechat-qrcode .wechat-qrcode-icon {
-  -webkit-transform: rotate(225deg);
-  -moz-transform: rotate(225deg);
-  -ms-transform: rotate(225deg);
-  transform: rotate(225deg);
-  -ms-transform: rotate(225deg);
-  -moz-transform: rotate(225deg);
-  -webkit-transform: rotate(225deg);
-  -o-transform: rotate(225deg);
-  background-color: #fff;
-  border-color: #fff;
-  overflow: hidden;
-  width: 12px;
-  height: 12px;
-  position: absolute;
-  left: 94px;
-  top: 259px;
-  border-left: 1px solid #000;
-  border-top: 1px solid #000;
+#footer-contact {
+  float: left;
+  width: 360px;
 }
-.footer-link .qr-on {
-  display: inline-block;
+#footer-contact .contact .qq-group {
+  margin-bottom: 20px;
+}
+#footer-contact .qr-code img {
+  width: 160px;
+  height: 160px;
 }
 pre,
 code {
