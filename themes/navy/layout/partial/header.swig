@@ -1,0 +1,30 @@
+<header id="header" class="header">
+  <div class="wrapper">
+    <div id="header-inner" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/zh-cn/" id="logo">Feflow</a>
+      </h1>
+      <nav id="main-nav">
+        <a href="#" class="main-nav-link">讲师介绍</a>
+        <a href="#" class="main-nav-link">专题介绍</a>
+        <a href="#" class="main-nav-link">日程</a>
+        <div id="buy-ticket">
+          <a href="#" class="buy-ticket-link">立即购票</a>
+        </div>
+      </nav>
+      <div id="lang-select-wrap">
+        <label id="lang-select-label"><i class="fa fa-globe"></i><span>简体中文</span></label>
+        <select id="lang-select" data-canonical="">
+          
+            <option value="zh-cn" selected>简体中文</option>
+          
+        </select>
+      </div>
+      <a id="mobile-nav-toggle">
+        <span class="mobile-nav-toggle-bar"></span>
+        <span class="mobile-nav-toggle-bar"></span>
+        <span class="mobile-nav-toggle-bar"></span>
+      </a>
+    </div>
+  </div>
+</header>
