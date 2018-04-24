@@ -18,15 +18,24 @@ logo-size = 50px
 
 #logo-wrap
   flex: 0 1
-  margin-right: 220px
+  margin-right: 40px
+  margin-left: 30px
+  @media mq-normal
+    margin-right: 220px
+    margin-left: 0
 
 #logo
   hide-text()
-  background: url("/logo.png")
-  width: 459px
-  height: 58px
-  background-size: @width @height
+  background: url("/mlogo.png")
+  width: 182px
+  height: 26.5px
+  background-size: contain
   display: block
+  @media mq-normal
+    background: url("/logo.png")
+    width: 459px
+    height: 58px
+    
 
 #main-nav
   display: none
@@ -56,13 +65,20 @@ logo-size = 50px
   .buy-ticket-link 
     text-decoration: none
     color: #fff
-    height: 59px
     display: inline-block
     background: linear-gradient(90deg, #3379ff, #852cff)
-    padding: 0 33px
-    border-radius: 6px
-    text-align: center
-    line-height: 59px
+    height: 30px
+    padding: 0 8px
+    line-height: 30px
+    font-size: 12px
+    border-radius: 4px
+    @media mq-normal
+      padding: 0 33px
+      border-radius: 6px
+      text-align: center
+      line-height: 59px
+      height: 59px
+      font-size: 16px
 
 
 #lang-select-wrap

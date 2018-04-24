@@ -1,9 +1,13 @@
 #banner
-  height: 924px
   color: rgba(255, 255, 255, 0.8)
   text-align: center
-  background: url(https://qpic.url.cn/feeds_pic/Q3auHgzwzM7D1nxiaOHkYVsmmsTHcZ3TsD0vHicvVawxdgTmCJlSCwSw/) center center
-  background-position: center center
+  background: url(https://qpic.url.cn/feeds_pic/ajNVdqHZLLDOfgiciaAv3icgkwg4ACEAwUd5KZElNbargT2gEGichJy7QA/) center center
+  background-size: contain
+  height: 606.5px
+  @media mq-normal
+    height: 924px
+    background: url(https://qpic.url.cn/feeds_pic/Q3auHgzwzM7D1nxiaOHkYVsmmsTHcZ3TsD0vHicvVawxdgTmCJlSCwSw/) center center
+    background-position: center center
   .wrapper
     height: 100%
   .inner
@@ -15,7 +19,9 @@
     -ms-flex-align: center
     align-items: center
     flex-direction: column
-    padding-top: 620px
+    padding-top: 310px
+    @media mq-normal
+      padding-top: 620px
 
 #banner-bio
   font-size: 16px
@@ -87,10 +93,14 @@
     display: block
 
 #intro-feature-title
-  width: 543px
-  height: 67px
   background: url(https://qpic.url.cn/feeds_pic/ajNVdqHZLLAt1ecjaF8Nr9iadArhicd4nNUVo7k3PBwSESKneSL0wuvw/) no-repeat
   margin: 60px auto 16px
+  width: 271.5px
+  height: 33.5px
+  background-size: contain
+  @media mq-normal
+    width: 543px
+    height: 67px
 
 #intro-feature-list
   padding-top: 20px
@@ -106,11 +116,12 @@
   padding-top: 20px;
   font-size: 18px;
   width: 100%;
-  margin: 0px 42px;
+  padding: 0px 21px
   @media mq-normal
-    -webkit-box-flex: 1;
-    font-size: 18px;
-    flex: 0 0 50%;
+    -webkit-box-flex: 1
+    font-size: 18px
+    flex: 0 0 50%
+    margin: 0px 42px
 
 .intro-feature
   position: relative
@@ -123,23 +134,35 @@
   font-size: 36px
   padding-bottom: 26px
   text-align: center
+  img
+    width: 110px
+    height: 81px
 
 .intro-feature-title
   font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif
-  font-size: 24px
+  font-size: 16px
   color: rgb(51, 51, 51)
   font-weight: bold
   margin-bottom: 16px
+  @media mq-normal
+    font-size: 24px
 
 .intro-feature-desc
   text-align: left
-  line-height: 24px
-
+  font-size: 12px
+  line-height: 14px
+  @media mq-normal
+    line-height: 24px
+    font-size: 14px
 #intro-feature-background
   color: rgb(53, 119, 255)
-  font-size: 24px
-  line-height: 40px
-  margin: 80px
+  margin: 40px
+  line-height: 20px
+  font-size: 14px
+  @media mq-normal
+    font-size: 24px
+    line-height: 40px
+    margin: 80px
 
 #intro-user-wrap
   margin: 0 auto;
@@ -162,57 +185,89 @@
     
 #subject-wrap 
   text-align: center
-  padding-top: 74px
-  padding-bottom: 70px
+  padding-top: 37px
+  padding-bottom: 35px
   margin: 0px auto
+  @media mq-normal
+    padding-top: 74px
+    padding-bottom: 70px
 
 .subject-title
-  width: 543px
-  height: 67px
   background: url(https://qpic.url.cn/feeds_pic/ajNVdqHZLLDah4qaGjOfkteepVOBfqPpc2KQ4RqkQ5mbIicicibZXxrtA/) no-repeat
   margin: 0px auto 16px
+  background-size: contain
+  width: 271.5px
+  height: 33.5px
+  @media mq-normal
+    width: 543px
+    height: 67px
 
 .subject-main 
-  width: 1196px
-  height: 280px
+  width: 358px
+  height: 140px
+  background-size: cover
   margin-bottom: 14px
   background: url(https://qpic.url.cn/feeds_pic/Q3auHgzwzM7I1jBYfDiaKXmlb4CrubsCjJagqiaLDLR1qmHwPetwFyww/) no-repeat
+  @media mq-normal
+    width: 1196px
+    height: 280px
   .subject-main-title
     color: rgb(255, 255, 255)
-    font-size: 32px
     font-weight: bold
     width: 312px
-    padding: 60px 0px 30px
     border-bottom: 1px dashed rgb(255, 255, 255)
-    margin: 0px auto 30px
-  .subject-main-content 
     font-size: 16px
+    padding: 30px 0 15px
+    margin: 0 auto 15px
+    @media mq-normal
+      font-size: 32px
+      padding: 60px 0px 30px
+      margin: 0px auto 30px
+
+  .subject-main-content 
+    font-size: 12px
     color: rgb(255, 255, 255)
-    width: 600px
+    width: 300px
     text-align: center
-    line-height: 24px
+    line-height: 16px
     margin: 0px auto
+    @media mq-normal
+      font-size: 16px
+      width: 600px
+      line-height: 24px
 
 .subject-branch 
   float: left
   width: 388px
-  height: 264px
+  height: 120px
   background-color: rgb(255, 255, 255)
   margin-right: 16px
-  margin-bottom: 128px    
+  margin-bottom: 14px
+  @media mq-normal
+    margin-bottom: 128px
+    height: 264px
   .subject-branch-title
     color: rgb(53, 119, 255)
-    font-size: 24px
+    font-size: 14px
     font-weight: bold
-    padding-top: 46px
-    padding-bottom: 28px
+    padding-top: 23px
+    padding-bottom: 14px
     border-bottom: 1px dashed rgb(221, 221, 221)
-    margin: 0px 32px 20px
+    margin: 0px 16px 10px
+    @media mq-normal
+      font-size: 24px
+      padding-top: 46px
+      padding-bottom: 28px
+      margin: 0px 32px 20px
   .subject-branch-content 
     text-align: left
-    line-height: 24px
-    font-size: 16px
-    margin: 0px 32px
+    line-height: 16px
+    font-size: 12px
+    margin: 0px 16px
+    @media mq-normal
+      line-height: 24px
+      font-size: 16px
+      margin: 0px 32px
 
 .no-margin
   margin-right: 0px
@@ -260,17 +315,22 @@
 
 .view-all 
   color: rgb(57, 115, 255)
-  font-size: 18px
-  width: 160px
-  height: 60px
+  font-size: 14px
   text-align: center
-  line-height: 60px
   border-width: 1px
   border-style: solid
   border-color: rgb(57, 122, 255)
   border-image: initial
   margin: 40px auto 0px
   border-radius: 4px
+  width: 120px
+  height: 45px
+  line-height: 45px
+  @media mq-normal
+    width: 160px
+    height: 60px
+    line-height: 60px
+    font-size: 18px
 
 #partner-wrap 
   text-align: center
