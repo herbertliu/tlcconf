@@ -48,7 +48,7 @@
 <meta property="og:description" content="ESLint于2013年6月份推出，至今4个年头，最新版本v4.8.0。它是目前主流的用于Javascript和JSX代码规范检查的利器，很多大公司比如Airbnb和Google均有一套自己的Javascript编码规范，而规范的实施背后离不开ESLint的支持。比如大名顶顶的eslint-config-airbnb和eslint-config-google。为了更好的统一团队的JS编程风格和代码">
 <meta property="og:locale" content="zh-cn">
 <meta property="og:image" content="https://pub.idqqimg.com/pc/misc/files/20171011/7a4572cf1c4b4690895f80bce33a76a1.jpg">
-<meta property="og:updated_time" content="2018-04-18T13:44:31.872Z">
+<meta property="og:updated_time" content="2018-04-24T07:43:14.959Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ESlint规范">
 <meta name="twitter:description" content="ESLint于2013年6月份推出，至今4个年头，最新版本v4.8.0。它是目前主流的用于Javascript和JSX代码规范检查的利器，很多大公司比如Airbnb和Google均有一套自己的Javascript编码规范，而规范的实施背后离不开ESLint的支持。比如大名顶顶的eslint-config-airbnb和eslint-config-google。为了更好的统一团队的JS编程风格和代码">
@@ -80,13 +80,13 @@
         <a href="#" class="main-nav-link">讲师介绍</a>
         <a href="#" class="main-nav-link">专题介绍</a>
         <a href="#" class="main-nav-link">日程</a>
-        <div id="buy-ticket">
-          <a href="#" class="buy-ticket-link">立即购票</a>
-        </div>
       </nav>
+      <div id="buy-ticket">
+        <a href="#" class="buy-ticket-link">立即购票</a>
+      </div>
       <div id="lang-select-wrap">
         <label id="lang-select-label"><i class="fa fa-globe"></i><span>简体中文</span></label>
-        <select id="lang-select" data-canonical="docs/eslint.html">
+        <select id="lang-select" data-canonical="">
           
             <option value="zh-cn" selected>简体中文</option>
           
@@ -100,11 +100,10 @@
     </div>
   </div>
 </header>
-
     <div id="content-wrap">
   <div id="content" class="wrapper">
     <div id="content-inner">
-      <article class="article-container" itemscope itemtype="http://schema.org/Article">
+      <article class="article-container" itemscope="" itemtype="http://schema.org/Article">
         <div class="article-inner">
           <div class="article">
             <div class="inner">
@@ -139,7 +138,7 @@
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2018-04-18T13:44:31.872Z" itemprop="dateModified">上次更新：2018-04-18</time>
+                <time class="article-footer-updated" datetime="2018-04-24T07:43:14.959Z" itemprop="dateModified">上次更新：2018-04-24</time>
                 <a href="themes.html" class="article-footer-prev" title="README规范"><i class="fa fa-chevron-left"></i><span>上一页</span></a>
               </footer>
               
@@ -207,19 +206,18 @@
       <div class="qr-code">
         <div class="footer-subtitle">公众号</div>
         <div>
-          <img src="https://pub.idqqimg.com/pc/misc/files/20170911/48b1d9496df34e689d1191d8d5e9072b.png" />
+          <img src="https://pub.idqqimg.com/pc/misc/files/20170911/48b1d9496df34e689d1191d8d5e9072b.png">
         </div>
       </div>
     </div>
     <div id="footer-transport">
       <div class="footer-subtitle">交通指南</div>
       <div class="location">
-        <iframe src="http://apis.map.qq.com/tools/poimarker?type=0&zoom=10&marker=coord:22.540430,113.934540;coordtype:5;title:腾讯大厦;addr:广东省深圳市南山区深南大道10000号&key=J5OBZ-NYL6G-MY2Q4-IWXUK-7YWDQ-SSB67&referer=myapp" width="408" height="228" frameborder="0"></iframe>
+        <iframe src="http://apis.map.qq.com/tools/poimarker?type=0&amp;zoom=10&amp;marker=coord:22.540430,113.934540;coordtype:5;title:腾讯大厦;addr:广东省深圳市南山区深南大道10000号&amp;key=J5OBZ-NYL6G-MY2Q4-IWXUK-7YWDQ-SSB67&amp;referer=myapp" width="408" height="228" frameborder="0"></iframe>
       </div>
     </div>
   </div>
 </footer>
-
   </div>
   <div id="mobile-nav-dimmer"></div>
   <nav id="mobile-nav">
@@ -253,6 +251,14 @@
 
 <!-- Algolia -->
 
+<script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+<script type="text/javascript">
+document.getElementById('search-input-wrap').classList.add('on');
+docsearch({
+  apiKey: 'cdea7d4e47d84f6145b77e7f68689f35',
+  indexName: 'hexo_zh-cn',
+  inputSelector: '#search-input'
+});
 </script>
 
 
