@@ -223,26 +223,40 @@
   padding-bottom: 70px
   margin: 0px auto
   .intro-user-title 
-    width: 543px
-    height: 67px
+    width: 271.5px
+    height: 33.5px
     background: url(https://qpic.url.cn/feeds_pic/Q3auHgzwzM5aDoH6vbhicFbrxibcaWzAmsYAlqvJ32g4KqxiaBtibwRZYg/) no-repeat
+    background-size: contain
     margin: 0px auto 16px
+    @media mq-normal
+      width: 543px
+      height: 67px
   .intro-user-item
     display: inline-block
-    width: 240px
-    margin: 20px
+    width: 120px
+    margin: 10px
+    @media mq-normal
+      width: 240px
+      margin: 20px
     img 
-      width: 160px
-      height: 160px
+      width: 80px
+      height: 80px
       border-radius: 50%
+      @media mq-normal
+        width: 160px
+        height: 160px
     .name  
       color: rgb(51, 121, 255)
-      font-size: 22px
+      font-size: 14px
       font-weight: bold
       margin: 14px 0px
+      @media mq-normal
+        font-size: 22px
     .desc
-      font-size: 18px
+      font-size: 14px
       color: rgb(51, 51, 51)
+      @media mq-normal
+        font-size: 18px 
 
 .view-all 
   color: rgb(57, 115, 255)
@@ -263,14 +277,25 @@
   padding-top: 74px
   padding-bottom: 100px
   margin: 0px auto
-  .partner-title 
-    width: 543px
-    height: 67px
+  .partner-title
     background: url(https://qpic.url.cn/feeds_pic/Q3auHgzwzM5tbceibLErxRBLriaw2LYcvRqPyFYRNMEhL8ia2xBib2nTUA/) no-repeat
+    background-size: contain
     margin: 0px auto 36px
-  .partner-item 
-    float: left
-    padding: 5px
+    width: 271.5px
+    height: 33.5px
+    @media mq-normal
+      width: 543px
+      height: 67px
+  .partner-item
+    img
+      width: 115px
+      height: 50px
+      float: left
+      padding: 5px
+      @media mq-normal
+        width: 290px
+        height: 100px
+
   ul:after
     clear: both
     content: ''
