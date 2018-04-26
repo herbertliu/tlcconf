@@ -52,13 +52,20 @@
     border-radius: 50px
   .buy-ticket
     text-align: center
-    height: 70px
-    line-height: 70px
-    font-size: 24px
     background: linear-gradient(90deg, rgb(51, 121, 255), rgb(133, 44, 255))
-    padding: 0px 60px
-    border-radius: 6px  
-
+    width: 160px
+    height: 50px
+    font-size: 14px
+    line-height: 50px
+    padding: 0
+    border-radius: 2px
+    @media mq-normal
+      padding: 0px 60px
+      border-radius: 6px
+      height: 70px
+      line-height: 70px
+      font-size: 24px
+      width: auto
 #banner-start
   text-align: center
   padding: 40px 0
@@ -103,25 +110,27 @@
     height: 67px
 
 #intro-feature-list
-  padding-top: 20px
   display: flex
   flex-flow: column
   display: -webkit-box
   -webkit-box-pack: justify
   -webkit-box-align: center
+  padding-top: 10px
   @media mq-normal
     flex-flow: row wrap
+    padding-top: 20px
 
 .intro-feature-wrap
   padding-top: 20px;
   font-size: 18px;
   width: 100%;
-  padding: 0px 21px
+  padding: 0px 40px 20px 40px
   @media mq-normal
     -webkit-box-flex: 1
     font-size: 18px
     flex: 0 0 50%
     margin: 0px 42px
+    padding: 0px 20px
 
 .intro-feature
   position: relative
@@ -132,8 +141,10 @@
 .intro-feature-icon
   color: color-link
   font-size: 36px
-  padding-bottom: 26px
+  padding-bottom: 13px
   text-align: center
+  @media mq-normal
+    padding-bottom: 26px
   img
     width: 110px
     height: 81px
@@ -186,7 +197,7 @@
 #subject-wrap 
   text-align: center
   padding-top: 37px
-  padding-bottom: 35px
+  padding-bottom: 20px
   margin: 0px auto
   @media mq-normal
     padding-top: 74px
@@ -202,7 +213,8 @@
     width: 543px
     height: 67px
 
-.subject-main 
+.subject-main
+  margin: 0 auto
   width: 358px
   height: 140px
   background-size: cover
@@ -237,15 +249,17 @@
       line-height: 24px
 
 .subject-branch 
-  float: left
-  width: 388px
+  margin: 0 auto
+  width: 358px
   height: 120px
   background-color: rgb(255, 255, 255)
-  margin-right: 16px
   margin-bottom: 14px
   @media mq-normal
+    float: left
+    margin-right: 16px
     margin-bottom: 128px
     height: 264px
+    width: 388px
   .subject-branch-title
     color: rgb(53, 119, 255)
     font-size: 14px
@@ -270,7 +284,8 @@
       margin: 0px 32px
 
 .no-margin
-  margin-right: 0px
+  @media mq-normal
+    margin-right: 0px
 
 #intro-user-wrap 
   text-align: center
@@ -347,10 +362,11 @@
       width: 543px
       height: 67px
   .partner-item
+    display: inline-block
     img
       width: 115px
       height: 50px
-      float: left
+      display: block
       padding: 5px
       @media mq-normal
         width: 290px
