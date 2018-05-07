@@ -48,7 +48,7 @@
     <div class="inner">
       <div id="intro-user-wrap">
         <div class="intro-user-title"></div>
-        <ul>
+        <ul id="speaker-items">
           <li class="intro-user-item">
             <img src="https://qpic.url.cn/feeds_pic/ajNVdqHZLLA2iborfYCLbRacKT4NVQOSUkcFLo3sVBeEcqfzvNffvYA/">
             <div class="intro-user-info">
@@ -116,7 +116,7 @@
     <div class="inner">
       <div id="partner-wrap">
         <div class="partner-title"></div>
-        <ul>
+        <ul id="sponsor-items">
           <li class="partner-item">
             <img src="https://qpic.url.cn/feeds_pic/ajNVdqHZLLDyPlFHdTvxxOUDwv01Epu53b4icF3LU4oNyEyF0xldL2Q/">
           </li>

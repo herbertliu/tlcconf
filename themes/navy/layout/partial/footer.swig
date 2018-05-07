@@ -2,7 +2,7 @@
   <div class="inner">
     <div id="footer-links">
       <div class="footer-subtitle">友情链接</div>
-      <ul>
+      <ul id="friendlink-items">
         <li><a>NOW直播</a></li>
         <li><a>NOW直播</a></li>
         <li><a>NOW直播</a></li>

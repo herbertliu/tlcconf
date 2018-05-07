@@ -1,9 +1,12 @@
 <!-- Scripts -->
 <!-- build:js build/js/main.js -->
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://unpkg.com/swig@1.4.2/dist/swig.min.js"></script>
 {{ js('js/lang_select') }}
 {{ js('js/toc') }}
 {{ js('js/mobile_nav') }}
 {{ js('js/footer_qrcode') }}
+{{ js('js/data') }}
 <!-- endbuild -->
 {% if page.layout === 'plugins' %}
 <!-- Plugin search -->
