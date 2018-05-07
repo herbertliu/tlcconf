@@ -43,7 +43,7 @@
 <meta property="og:site_name" content="腾讯Live开发者大会">
 <meta property="og:description" content="Hexo 2.7 has been released with three new features. I’m going to introduce them below. Fragment CachingAlthough Hexo is fast, it may become slow if you have thousands of source files or complicated ca">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2018-04-26T02:06:53.081Z">
+<meta property="og:updated_time" content="2018-04-26T05:56:11.350Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo 2.7 Released">
 <meta name="twitter:description" content="Hexo 2.7 has been released with three new features. I’m going to introduce them below. Fragment CachingAlthough Hexo is fast, it may become slow if you have thousands of source files or complicated ca">
@@ -153,7 +153,7 @@
   <div class="inner">
     <div id="footer-links">
       <div class="footer-subtitle">友情链接</div>
-      <ul>
+      <ul id="friendlink-items">
         <li><a>NOW直播</a></li>
         <li><a>NOW直播</a></li>
         <li><a>NOW直播</a></li>
@@ -211,10 +211,13 @@
 </nav>
   <!-- Scripts -->
 <!-- build:js build/js/main.js -->
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://unpkg.com/swig@1.4.2/dist/swig.min.js"></script>
 <script src="/js/lang_select.js"></script>
 <script src="/js/toc.js"></script>
 <script src="/js/mobile_nav.js"></script>
 <script src="/js/footer_qrcode.js"></script>
+<script src="/js/data.js"></script>
 <!-- endbuild -->
 
 <!-- Algolia -->

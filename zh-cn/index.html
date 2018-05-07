@@ -51,7 +51,7 @@
 <meta property="og:image" content="https://qpic.url.cn/feeds_pic/ajNVdqHZLLDJxuOWCYaOCAggicG9Vaph93iaHzgZJHa3bXAsasBuYoyQ/">
 <meta property="og:image" content="https://qpic.url.cn/feeds_pic/Q3auHgzwzM6bUMh4dUgwzhHiaf6euX3Wtlym59OxDGYM4o3PfnQibcLw/">
 <meta property="og:image" content="https://qpic.url.cn/feeds_pic/Q3auHgzwzM7ckrQk7BnxBLKCsuwJxZLrMdAicVic9Vl3T8U0Njq9RPSA/">
-<meta property="og:updated_time" content="2018-04-26T02:06:53.399Z">
+<meta property="og:updated_time" content="2018-04-26T05:56:11.656Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="腾讯Live开发者大会">
 <meta name="twitter:description" content="Hexo is a fast, simple &amp; powerful blog framework powered by Node.js.">
@@ -153,7 +153,7 @@
     <div class="inner">
       <div id="intro-user-wrap">
         <div class="intro-user-title"></div>
-        <ul>
+        <ul id="speaker-items">
           <li class="intro-user-item">
             <img src="https://qpic.url.cn/feeds_pic/ajNVdqHZLLA2iborfYCLbRacKT4NVQOSUkcFLo3sVBeEcqfzvNffvYA/">
             <div class="intro-user-info">
@@ -221,7 +221,7 @@
     <div class="inner">
       <div id="partner-wrap">
         <div class="partner-title"></div>
-        <ul>
+        <ul id="sponsor-items">
           <li class="partner-item">
             <img src="https://qpic.url.cn/feeds_pic/ajNVdqHZLLDyPlFHdTvxxOUDwv01Epu53b4icF3LU4oNyEyF0xldL2Q/">
           </li>
@@ -280,7 +280,7 @@
   <div class="inner">
     <div id="footer-links">
       <div class="footer-subtitle">友情链接</div>
-      <ul>
+      <ul id="friendlink-items">
         <li><a>NOW直播</a></li>
         <li><a>NOW直播</a></li>
         <li><a>NOW直播</a></li>
@@ -338,10 +338,13 @@
 </nav>
   <!-- Scripts -->
 <!-- build:js build/js/main.js -->
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://unpkg.com/swig@1.4.2/dist/swig.min.js"></script>
 <script src="/js/lang_select.js"></script>
 <script src="/js/toc.js"></script>
 <script src="/js/mobile_nav.js"></script>
 <script src="/js/footer_qrcode.js"></script>
+<script src="/js/data.js"></script>
 <!-- endbuild -->
 
 <!-- Algolia -->
