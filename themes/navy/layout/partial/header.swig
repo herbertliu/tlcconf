@@ -5,7 +5,7 @@
         <a href="/zh-cn/" id="logo">Feflow</a>
       </h1>
       <nav id="main-nav">
-        <a href="#" class="main-nav-link">讲师介绍</a>
+        {{ header_menu('main-nav') }}
         <a href="#" class="main-nav-link">专题介绍</a>
         <a href="#" class="main-nav-link">日程</a>
       </nav>
