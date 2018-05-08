@@ -6,7 +6,6 @@
       </h1>
       <nav id="main-nav">
         {{ header_menu('main-nav') }}
-        <a href="#" class="main-nav-link">专题介绍</a>
         <a href="#" class="main-nav-link">日程</a>
       </nav>
       <div id="buy-ticket">

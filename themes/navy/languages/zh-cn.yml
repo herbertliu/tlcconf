@@ -1,6 +1,6 @@
 menu:
-  docs: 讲师介绍
-  api: API
+  speaker: 讲师介绍
+  subject: 专题介绍
   news: 新闻
   plugins: 插件
   themes: 主题
