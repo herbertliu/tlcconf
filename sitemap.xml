@@ -2,121 +2,93 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://feflowjs.org/index.html</loc>
+    <loc>https://feflowjs.org/zh-cn/subject/index.html</loc>
     
-    <lastmod>2018-05-07T12:05:54.578Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://feflowjs.org/zh-cn/docs/writing.html</loc>
-    
-    <lastmod>2018-04-26T05:56:11.656Z</lastmod>
+    <lastmod>2018-05-08T10:04:15.048Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://feflowjs.org/zh-cn/docs/themes.html</loc>
+    <loc>https://feflowjs.org/speakers/index.html</loc>
     
-    <lastmod>2018-04-26T05:56:11.656Z</lastmod>
+    <lastmod>2018-05-08T10:04:04.262Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://feflowjs.org/zh-cn/speaker/index.html</loc>
+    
+    <lastmod>2018-05-08T09:58:04.271Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://feflowjs.org/zh-cn/index.html</loc>
     
-    <lastmod>2018-04-26T05:56:11.656Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://feflowjs.org/zh-cn/docs/tag-plugins.html</loc>
-    
-    <lastmod>2018-04-26T05:56:11.655Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://feflowjs.org/zh-cn/docs/permalinks.html</loc>
-    
-    <lastmod>2018-04-26T05:56:11.655Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://feflowjs.org/zh-cn/docs/index.html</loc>
-    
-    <lastmod>2018-04-26T05:56:11.655Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://feflowjs.org/zh-cn/docs/eslint.html</loc>
-    
-    <lastmod>2018-04-26T05:56:11.655Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://feflowjs.org/zh-cn/docs/commands.html</loc>
-    
-    <lastmod>2018-04-26T05:56:11.655Z</lastmod>
+    <lastmod>2018-05-08T09:47:14.066Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://feflowjs.org/themes/index.html</loc>
     
-    <lastmod>2018-04-26T05:56:11.362Z</lastmod>
+    <lastmod>2018-05-08T03:46:19.741Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://feflowjs.org/plugins/index.html</loc>
+    <loc>https://feflowjs.org/subjects/index.html</loc>
     
-    <lastmod>2018-04-26T05:56:11.362Z</lastmod>
+    <lastmod>2018-05-08T03:46:19.740Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://feflowjs.org/index.html</loc>
+    
+    <lastmod>2018-05-08T03:46:19.739Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://feflowjs.org/about/index.html</loc>
     
-    <lastmod>2018-04-26T05:56:11.357Z</lastmod>
+    <lastmod>2018-05-08T03:46:19.736Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://feflowjs.org/news/2016/02/28/hexo-3-2-released/</loc>
     
-    <lastmod>2018-04-26T05:56:11.357Z</lastmod>
+    <lastmod>2018-05-08T03:46:19.735Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://feflowjs.org/news/2015/03/05/hexo-3-0-released/</loc>
     
-    <lastmod>2018-04-26T05:56:11.356Z</lastmod>
+    <lastmod>2018-05-08T03:46:19.735Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://feflowjs.org/news/2015/02/27/new-documentation-and-registry/</loc>
     
-    <lastmod>2018-04-26T05:56:11.356Z</lastmod>
+    <lastmod>2018-05-08T03:46:19.734Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://feflowjs.org/news/2014/07/13/hexo-2-8-released/</loc>
     
-    <lastmod>2018-04-26T05:56:11.351Z</lastmod>
+    <lastmod>2018-05-08T03:46:19.729Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://feflowjs.org/news/2014/06/14/hexo-2-7-released/</loc>
     
-    <lastmod>2018-04-26T05:56:11.350Z</lastmod>
+    <lastmod>2018-05-08T03:46:19.728Z</lastmod>
     
   </url>
   
