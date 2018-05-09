@@ -114,6 +114,18 @@
 <div id="gray-content-wrap">
   <div class="wrapper">
     <div class="inner">
+      <div id="preview-wrap">
+        <div class="preview-title"></div>
+        <div class="preview-banner">
+          <a href="http://tlc.ivweb.io/" target="_blank"><img src="https://qpic.url.cn/feeds_pic/ajNVdqHZLLASNiajAYDYP8ic86yWKC2tHgFvVscFIog7E2lG4dW9icrTA/" /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="gray-content-wrap">
+  <div class="wrapper">
+    <div class="inner">
       <div id="partner-wrap">
         <div class="partner-title"></div>
         <ul id="sponsor-items">
