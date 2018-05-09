@@ -849,6 +849,37 @@ body {
     font-size: 18px;
   }
 }
+#preview-wrap {
+  margin-top: 60px;
+}
+#preview-wrap .preview-title {
+  background: url("https://qpic.url.cn/feeds_pic/Q3auHgzwzM4PlOCUvRdCL8Im2dhibTHJmjKbBuaVqr1LADd4RzrakBA/") no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  margin: 0px auto 36px;
+  width: 271.5px;
+  height: 33.5px;
+}
+@media screen and (min-width: 769px) {
+  #preview-wrap .preview-title {
+    width: 543px;
+    height: 67px;
+  }
+}
+#preview-wrap .preview-banner {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
 #partner-wrap {
   text-align: center;
   padding-top: 74px;
