@@ -1,5 +1,6 @@
 <!-- Scripts -->
 <!-- build:js build/js/main.js -->
+<script src="https://unpkg.com/jquery@1.11.1/dist/jquery.min.js"></script>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="https://unpkg.com/swig@1.4.2/dist/swig.min.js"></script>
 {{ js('js/lang_select') }}

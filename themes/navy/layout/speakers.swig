@@ -4,7 +4,7 @@
       <div class="wrapper">
         <div class="inner">
           <h1>100余位国内外技术专家</h1>
-          <ul class="tab-items">
+          <ul class="tab-items" id="tab-head-items">
             <li>全部</li>
             <li>主会场</li>
             <li>新技术分会场</li>

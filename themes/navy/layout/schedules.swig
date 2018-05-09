@@ -3,7 +3,7 @@
     <div class="tab-header">
       <div class="wrapper">
         <div class="inner">
-          <ul class="tab-items">
+          <ul class="tab-items" id="tab-head-items">
             <li>全部</li>
             <li>主会场</li>
             <li>新技术分会场</li>
@@ -16,7 +16,7 @@
     <div class="tab-content">
       <div class="wrapper">
         <div class="inner">
-          <div class="timeline-wrap">
+          <div class="timeline-wrap" id="timeline-wrap">
             <h1>
               <i></i>
               主会场
