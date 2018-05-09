@@ -1102,6 +1102,184 @@ body {
   background: rgba(255,255,255,0.2);
   margin-right: 1px;
 }
+.schedule-wrap h1 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.schedule-wrap h1 i {
+  background: url("https://qpic.url.cn/feeds_pic/Q3auHgzwzM7jCviaKDeWGYrK7hkNGArFV6icMib43GkmgejX0Hnj6JbwQ/") no-repeat;
+  display: inline-block;
+  width: 24px;
+  height: 30px;
+}
+.schedule-wrap .tab-header {
+  background: url("https://qpic.url.cn/feeds_pic/Q3auHgzwzM5Au48fl0sn9fvVIaDvpRFftZU3YP6rD4P4hIibaicLqr8A/") center center;
+  height: 260px;
+}
+.schedule-wrap .tab-header .inner {
+  height: 260px;
+  position: relative;
+}
+.schedule-wrap .tab-header .inner .tab-items {
+  position: absolute;
+  bottom: 0;
+}
+.schedule-wrap .tab-header .inner .tab-items li {
+  cursor: pointer;
+  float: left;
+  font-size: 20px;
+  color: #fff;
+  width: 237px;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  background: rgba(255,255,255,0.2);
+  margin-right: 1px;
+}
+.schedule-wrap .timeline-wrap {
+  padding: 110px 0 60px 110px;
+}
+.schedule-wrap .timeline-wrap h1 {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+.schedule-wrap .timeline-wrap h1 i {
+  background: url("https://qpic.url.cn/feeds_pic/Q3auHgzwzM7jCviaKDeWGYrK7hkNGArFV6icMib43GkmgejX0Hnj6JbwQ/") no-repeat;
+  display: inline-block;
+  margin-right: 12px;
+}
+.schedule-wrap .timeline-wrap li {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.schedule-wrap .timeline-wrap li .time-slot {
+  position: relative;
+  float: left;
+  height: 80px;
+  width: 180px;
+  text-align: center;
+  font-size: 18px;
+  color: #3379ff;
+  margin-right: 32px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.schedule-wrap .timeline-wrap li .time-slot .border {
+  position: absolute;
+  background: #d1d1d1;
+  height: 100%;
+  width: 1px;
+  right: 0;
+}
+.schedule-wrap .timeline-wrap li .time-slot .dot {
+  background: #d1d1d1;
+  border-radius: 50%;
+  position: absolute;
+  right: -8px;
+  width: 16px;
+  height: 16px;
+}
+.schedule-wrap .timeline-wrap li .plan {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  float: left;
+  color: #3379ff;
+  font-size: 20px;
+}
+.schedule-wrap .timeline-wrap li .plan .speaker-avatar {
+  float: left;
+  width: 90px;
+  height: 90px;
+  margin-right: 16px;
+}
+.schedule-wrap .timeline-wrap li .plan .speaker-avatar img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+.schedule-wrap .timeline-wrap li .plan .speaker-info {
+  float: left;
+}
+@media screen and (min-width: 769px) {
+  .schedule-wrap .timeline-wrap li .plan .speaker-info {
+    font-size: 16px;
+  }
+}
+.schedule-wrap .timeline-wrap li .plan .speaker-info .speaker-topic {
+  font-size: 20px;
+  color: #3577ff;
+  line-height: 24px;
+  margin-bottom: 12px;
+}
+.schedule-wrap .timeline-wrap li .plan .speaker-info .speaker-name {
+  color: #999;
+  font-size: 18px;
+}
+.schedule-wrap .timeline-wrap li.topic {
+  height: 126px;
+}
+.schedule-wrap .timeline-wrap li.topic .time-slot {
+  height: 126px;
+}
+.schedule-wrap .timeline-wrap li:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+.schedule-wrap .timeline-wrap li:first-child .border {
+  height: 50%;
+  top: 50%;
+}
+.schedule-wrap .timeline-wrap li:last-child .border {
+  height: 50%;
+  top: 0;
+}
 #sidebar {
   width: 220px;
   float: left;
