@@ -1,10 +1,7 @@
 menu:
   speaker: 讲师介绍
   subject: 专题介绍
-  news: 新闻
-  plugins: 插件
-  themes: 主题
-  search: 搜索
+  schedule: 日程
 
 index:
   get_started: 开始使用
