@@ -216,7 +216,7 @@ body {
 }
 @media screen and (min-width: 769px) {
   #logo-wrap {
-    margin-right: 220px;
+    margin-right: 130px;
     margin-left: 0;
   }
 }
@@ -849,6 +849,10 @@ body {
     font-size: 18px;
   }
 }
+.view-all a {
+  color: #3973ff;
+  text-decoration: none;
+}
 #preview-wrap {
   margin-top: 60px;
 }
@@ -1080,6 +1084,7 @@ body {
 }
 .speaker-subject-items .speaker-info {
   float: left;
+  text-align: left;
 }
 @media screen and (min-width: 769px) {
   .speaker-subject-items .speaker-info {
