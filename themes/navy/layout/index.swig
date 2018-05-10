@@ -1,7 +1,7 @@
 <header id="banner">
   <div class="wrapper">
     <div class="inner">
-      <div id="banner-bio">2018年8月8日·深圳腾讯</div>
+      <div id="banner-bio">2018年8月18日·深圳腾讯</div>
       <div id="banner-buttons">
         <a href="#" class="buy-ticket">立即购票</a>
       </div>
@@ -58,7 +58,7 @@
         <ul id="sponsor-items">
                          
         </ul>
-        <div class="view-all">成为赞助商</div>
+        <div class="view-all"><a href="http://cn.mikecrm.com/ivrfype" target="_blank">成为赞助商</a></div>
       </div>
     </div>
   </div>
