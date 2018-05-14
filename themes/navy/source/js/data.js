@@ -119,6 +119,7 @@ e.exports=function(e){return null!=e&&(n(e)||r(e)||!!e._isBuffer)}},function(e,t
     };
 
     var renderIndexPage = function(data) {
+        $('#banner').css('background', data.bannerInfo.imageUrl);
         renderFeature(data.featureInfo);
         renderSubject(data.subjectInfo);
         renderSpeaker(data.speakerInfo);

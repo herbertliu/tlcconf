@@ -1,7 +1,7 @@
 <header id="banner">
   <div class="wrapper">
     <div class="inner">
-      <div id="banner-bio">2018年8月18日·深圳腾讯</div>
+      <div id="banner-bio">2018年8月18日·深圳科兴科学园国际会议中心</div>
       <div id="banner-buttons">
         <a href="#" class="buy-ticket">立即购票</a>
       </div>
