@@ -131,6 +131,7 @@ e.exports=function(e){return null!=e&&(n(e)||r(e)||!!e._isBuffer)}},function(e,t
 
         var initialTabContent = function() {
             renderTabContent(getAllSpeakers());
+            renderFriendLink(data.friendlinkInfo);
         };
 
         var getAllSpeakers = function() {
@@ -196,13 +197,14 @@ e.exports=function(e){return null!=e&&(n(e)||r(e)||!!e._isBuffer)}},function(e,t
                 subjectItems: data.subjectInfo.items
             }
         });
-        
+        renderFriendLink(data.friendlinkInfo);
         $('#subject-wrap').html(subjectOutput);
     };
 
     var renderSchedulePage = function(data) {
 
         var initialTabContent = function() {
+            renderFriendLink(data.friendlinkInfo);
             renderTabContent('全部', getAllSchedules());
         };
 
