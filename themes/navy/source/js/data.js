@@ -119,7 +119,7 @@ e.exports=function(e){return null!=e&&(n(e)||r(e)||!!e._isBuffer)}},function(e,t
     };
 
     var renderIndexPage = function(data) {
-        $('#banner').css('background', data.bannerInfo.imageUrl);
+        $('#banner').css('background-image', 'url('+data.bannerInfo.imageUrl+')');
         renderFeature(data.featureInfo);
         renderSubject(data.subjectInfo);
         renderSpeaker(data.speakerInfo);
@@ -189,7 +189,7 @@ e.exports=function(e){return null!=e&&(n(e)||r(e)||!!e._isBuffer)}},function(e,t
     };
 
     var renderSubjectPage = function(data) {
-        var subjectTpl = '{% for item in subjectItems %}<div id="speaker-subject-wrap"> <div class="speaker-subject-title"></div> <div class="{% if item.isMain %} speaker-subject-main {% else %} speaker-subject-branch {% endif %}"> <p class="speaker-subject-main-title">{{item.title}}</p> <p class="speaker-subject-main-content">{{item.description}}</p> </div> <ul> {% for speakerItem in item.speakers %}<li class="speaker-subject-items"> <div class="speaker-avatar"><img src="{{speakerItem.avatar}}" /></div> <div class="speaker-info"> <p class="speaker-topic">{{speakerItem.topic}}</p> <p class="speaker-name">{{speakerItem.name}}</p> </div> </li>{% endfor %}</ul> </div> {% endfor %}';
+        var subjectTpl = '{% for item in subjectItems %}<div id="speaker-subject-wrap"> {% if item.isMain %}<div class="speaker-subject-title"></div> {% endif %}<div class="{% if item.isMain %} speaker-subject-main {% else %} speaker-subject-branch {% endif %}"> <p class="speaker-subject-main-title">{{item.title}}</p> <p class="speaker-subject-main-content">{{item.description}}</p> </div> <ul> {% for speakerItem in item.speakers %}<li class="speaker-subject-items"> <div class="speaker-avatar"><img src="{{speakerItem.avatar}}" /></div> <div class="speaker-info"> <p class="speaker-topic">{{speakerItem.topic}}</p> <p class="speaker-name">{{speakerItem.name}}</p> </div> </li>{% endfor %}</ul> </div> {% endfor %}';
 
         var subjectOutput = swig.render(subjectTpl, {
             filename: '/subjectTpl',
