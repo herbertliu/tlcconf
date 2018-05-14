@@ -344,6 +344,9 @@ body {
 @media screen and (min-width: 769px) {
   #banner {
     height: 924px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
     background-position: center center;
   }
 }
