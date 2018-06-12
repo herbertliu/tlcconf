@@ -119,7 +119,10 @@ e.exports=function(e){return null!=e&&(n(e)||r(e)||!!e._isBuffer)}},function(e,t
     };
 
     var renderIndexPage = function(data) {
-        $('#banner').css('background-image', 'url('+data.bannerInfo.imageUrl+')');
+        if (window.innerWidth > 768) {
+            $('#banner').css('background-image', 'url('+data.bannerInfo.imageUrl+')');
+        }
+        
         renderFeature(data.featureInfo);
         renderSubject(data.subjectInfo);
         renderSpeaker(data.speakerInfo);

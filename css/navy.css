@@ -336,6 +336,7 @@ body {
 #banner {
   color: rgba(255,255,255,0.8);
   text-align: center;
+  background: url("https://qpic.url.cn/feeds_pic/ajNVdqHZLLDOfgiciaAv3icgkwg4ACEAwUd5KZElNbargT2gEGichJy7QA/") center center;
   -webkit-background-size: contain;
   -moz-background-size: contain;
   background-size: contain;
@@ -885,6 +886,9 @@ body {
   -webkit-justify-content: center;
   justify-content: center;
 }
+#preview-wrap .preview-banner img {
+  width: 100%;
+}
 #partner-wrap {
   text-align: center;
   padding-top: 74px;
@@ -1123,11 +1127,11 @@ body {
   margin-top: 100px;
   letter-spacing: 8px;
 }
-.speaker-wrap .tab-header .inner .tab-items {
+.speaker-wrap .tab-header .inner .tab-scroller-wrap .tab-items {
   position: absolute;
   bottom: 0;
 }
-.speaker-wrap .tab-header .inner .tab-items li {
+.speaker-wrap .tab-header .inner .tab-scroller-wrap .tab-items li {
   cursor: pointer;
   float: left;
   font-size: 20px;
