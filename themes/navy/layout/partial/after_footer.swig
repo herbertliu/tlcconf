@@ -6,7 +6,6 @@
 {{ js('js/lang_select') }}
 {{ js('js/toc') }}
 {{ js('js/mobile_nav') }}
-{{ js('js/footer_qrcode') }}
 {{ js('js/data') }}
 <!-- endbuild -->
 {% if page.layout === 'plugins' %}

@@ -4,9 +4,11 @@
       <div class="wrapper">
         <div class="inner">
           <h1>100余位国内外技术专家</h1>
-          <ul class="tab-items" id="tab-head-items">
+          <div class="tab-scroller-wrap">
+            <ul class="tab-items" id="tab-head-items">
 
-          </ul>
+            </ul>
+          </div>
         </div>
       </div>
     </div>        
