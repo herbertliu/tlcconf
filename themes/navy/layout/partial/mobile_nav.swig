@@ -2,9 +2,7 @@
   <div id="mobile-nav-inner">
     <ul id="mobile-nav-list">
       {{ header_menu('mobile-nav') }}
-      <li class="mobile-nav-item">
-        <a href="https://github.com/{{ config.github }}" class="mobile-nav-link" rel="external" target="_blank">GitHub</a>
-      </li>
+      <a href="http://cn.mikecrm.com/8srVvDS" class="mobile-nav-link" target="_blank">讲师申请</a>
     </ul>
     {% if page.layout == 'page' %}
       {{ doc_sidebar('mobile-nav') }}
