@@ -2,6 +2,7 @@ menu:
   speaker: 讲师介绍
   subject: 专题介绍
   schedule: 日程
+  apply: 讲师申请
 
 index:
   get_started: 开始使用

@@ -2,7 +2,6 @@
   <div id="mobile-nav-inner">
     <ul id="mobile-nav-list">
       {{ header_menu('mobile-nav') }}
-      <a href="http://cn.mikecrm.com/8srVvDS" class="mobile-nav-link" target="_blank">讲师申请</a>
     </ul>
     {% if page.layout == 'page' %}
       {{ doc_sidebar('mobile-nav') }}

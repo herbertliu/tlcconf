@@ -6,7 +6,6 @@
       </h1>
       <nav id="main-nav">
         {{ header_menu('main-nav') }}
-        <a href="http://cn.mikecrm.com/8srVvDS" class="main-nav-link" target="_blank">讲师申请</a>
       </nav>
       <div id="buy-ticket">
         <a href="#" class="buy-ticket-link">立即购票</a>
