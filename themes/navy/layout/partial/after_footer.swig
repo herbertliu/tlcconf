@@ -16,10 +16,10 @@
 <script async src="https://cdn.jsdelivr.net/lazysizes/3.0.0/lazysizes.min.js"></script>
 <!-- build:js build/js/plugins.js -->
 {{ js('js/plugins') }}
+<!-- endbuild -->
+{% endif %}
 <script type="text/javascript">
 $(document).ready(function(){ 
     $('#carousel').carousel({curDisplay: 0, autoPlay: false, interval: 3000});
 });
 </script>
-<!-- endbuild -->
-{% endif %}
