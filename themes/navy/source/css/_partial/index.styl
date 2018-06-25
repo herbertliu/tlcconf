@@ -639,6 +639,51 @@
           margin-top: 200px
           margin-bottom: 30px
   .tab-content
+    .review-pictures
+      .carousel
+        position: relative
+        z-index: 2
+        height: 250px
+        margin-top: 20px
+        transform-style: preserve-3d
+        perspective: 800px
+        img
+          position: absolute
+          left:50%
+          top:50%
+          width:504px
+          height:266px
+          margin-left:-252px
+          margin-top:-133px
+          transition:transform .5s ease-in-out
+          box-shadow:8px 8px 20px rgba(0,0,0,.2)
+          cursor:pointer
+        #bannerNav
+          position:relative
+          margin-top:20px
+          height:10px
+          padding:10px 0
+          text-align:center
+          ul
+            li
+              cursor:pointer
+              overflow:hidden
+              display:inline-block
+              width:14px
+              margin:0 2px
+              a
+                margin:0 auto
+                display:block
+                width:6px
+                height:6px
+                vertical-align:top
+                border-radius:3px
+                background:#5e6671
+                font-size:0
+        #bannerNav ul li.on a,#bannerNav ul li:hover a
+          background:#b4b7ba
+        #bannerNav ul li.on a
+          width:12px
     .requirements
       margin-top: 60px
       .requirements-title

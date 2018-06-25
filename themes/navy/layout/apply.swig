@@ -11,6 +11,19 @@
     <div class="tab-content">
       <div class="wrapper">
         <div class="inner">
+          <div class="review-pictures">
+            <div class="requirements-title">往期图集</div>
+            <div class="carousel" id="carousel">
+              <img src="http://www.17sucai.com/preview/67633/2017-08-29/%E8%BD%AE%E6%92%AD/img/1.jpg" data-url="http://www.17sucai.com" alt="">
+              <img src="http://www.17sucai.com/preview/67633/2017-08-29/%E8%BD%AE%E6%92%AD/img/2.jpg" data-url="http://www.17sucai.com" alt="">
+              <img src="http://www.17sucai.com/preview/67633/2017-08-29/%E8%BD%AE%E6%92%AD/img/3.jpg" data-url="http://www.17sucai.com" alt="">
+            </div>
+            <script type="text/javascript">
+            $(function () {
+              $('#carousel').carousel({curDisplay: 0, autoPlay: false, interval: 3000});
+            });
+            </script>
+          </div>
           <div class="requirements">
             <div class="requirements-title">招募要求</div>
             <div class="section">

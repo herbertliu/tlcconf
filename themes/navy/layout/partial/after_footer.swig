@@ -7,6 +7,7 @@
 {{ js('js/toc') }}
 {{ js('js/mobile_nav') }}
 {{ js('js/data') }}
+{{ js('js/carousel') }}
 <!-- endbuild -->
 {% if page.layout === 'plugins' %}
 <!-- Plugin search -->
