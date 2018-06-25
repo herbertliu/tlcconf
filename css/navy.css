@@ -1250,7 +1250,7 @@ body {
   font-size: 30px;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 .apply-wrap .tab-content .review-pictures .carousel {
   position: relative;
@@ -1282,21 +1282,21 @@ body {
   box-shadow: 8px 8px 20px rgba(0,0,0,0.2);
   cursor: pointer;
 }
-.apply-wrap .tab-content .review-pictures .carousel #bannerNav {
+.apply-wrap .tab-content .review-pictures #bannerNav {
   position: relative;
   margin-top: 20px;
   height: 10px;
   padding: 10px 0;
   text-align: center;
 }
-.apply-wrap .tab-content .review-pictures .carousel #bannerNav ul li {
+.apply-wrap .tab-content .review-pictures #bannerNav ul li {
   cursor: pointer;
   overflow: hidden;
   display: inline-block;
   width: 14px;
   margin: 0 2px;
 }
-.apply-wrap .tab-content .review-pictures .carousel #bannerNav ul li a {
+.apply-wrap .tab-content .review-pictures #bannerNav ul li a {
   margin: 0 auto;
   display: block;
   width: 6px;
@@ -1306,11 +1306,11 @@ body {
   background: #5e6671;
   font-size: 0;
 }
-.apply-wrap .tab-content .review-pictures .carousel #bannerNav ul li.on a,
-.apply-wrap .tab-content .review-pictures .carousel #bannerNav ul li:hover a {
+.apply-wrap .tab-content .review-pictures #bannerNav ul li.on a,
+.apply-wrap .tab-content .review-pictures #bannerNav ul li:hover a {
   background: #b4b7ba;
 }
-.apply-wrap .tab-content .review-pictures .carousel #bannerNav ul li.on a {
+.apply-wrap .tab-content .review-pictures #bannerNav ul li.on a {
   width: 12px;
 }
 .apply-wrap .tab-content .requirements {
