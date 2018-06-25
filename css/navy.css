@@ -1242,6 +1242,67 @@ body {
   margin-top: 200px;
   margin-bottom: 30px;
 }
+.apply-wrap .tab-content .review-pictures .carousel {
+  position: relative;
+  z-index: 2;
+  height: 250px;
+  margin-top: 20px;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  -ms-perspective: 800px;
+  perspective: 800px;
+}
+.apply-wrap .tab-content .review-pictures .carousel img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 504px;
+  height: 266px;
+  margin-left: -252px;
+  margin-top: -133px;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  -moz-transition: -moz-transform 0.5s ease-in-out;
+  -ms-transition: -ms-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  -webkit-box-shadow: 8px 8px 20px rgba(0,0,0,0.2);
+  box-shadow: 8px 8px 20px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+.apply-wrap .tab-content .review-pictures .carousel #bannerNav {
+  position: relative;
+  margin-top: 20px;
+  height: 10px;
+  padding: 10px 0;
+  text-align: center;
+}
+.apply-wrap .tab-content .review-pictures .carousel #bannerNav ul li {
+  cursor: pointer;
+  overflow: hidden;
+  display: inline-block;
+  width: 14px;
+  margin: 0 2px;
+}
+.apply-wrap .tab-content .review-pictures .carousel #bannerNav ul li a {
+  margin: 0 auto;
+  display: block;
+  width: 6px;
+  height: 6px;
+  vertical-align: top;
+  border-radius: 3px;
+  background: #5e6671;
+  font-size: 0;
+}
+.apply-wrap .tab-content .review-pictures .carousel #bannerNav ul li.on a,
+.apply-wrap .tab-content .review-pictures .carousel #bannerNav ul li:hover a {
+  background: #b4b7ba;
+}
+.apply-wrap .tab-content .review-pictures .carousel #bannerNav ul li.on a {
+  width: 12px;
+}
 .apply-wrap .tab-content .requirements {
   margin-top: 60px;
 }
