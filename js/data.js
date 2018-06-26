@@ -36,6 +36,8 @@ e.exports=function(e){return null!=e&&(n(e)||r(e)||!!e._isBuffer)}},function(e,t
                     renderSubjectPage(data);
                 } else if (/schedules/.test(url)) {
                     renderSchedulePage(data);
+                } else if (/apply/.test(url)) {
+                    renderApplyPage(data);
                 } else {
                     renderIndexPage(data);
                 }
@@ -266,4 +268,25 @@ e.exports=function(e){return null!=e&&(n(e)||r(e)||!!e._isBuffer)}},function(e,t
         });
         
     };
+
+    var renderApplyPage = function(data) {
+
+        var renderReviewImages = function(reviewImageInfo) {
+            var contentTpl = '{% for item in imgs %}<img src={{item.imgUrl}} data-url={{item.link}} />{% endfor %}'
+            var contentOutput = swig.render(contentTpl, {
+                locals: {
+                    imgs: reviewImageInfo.imgs
+                }
+            });
+            
+            $('#carousel').html(contentOutput);
+
+            $(document).ready(function(){ 
+                $('#carousel').carousel({curDisplay: 0, autoPlay: false, interval: 3000});
+            });
+        };
+
+        renderReviewImages(data.reviewImageInfo);
+    }
+
   }());  
