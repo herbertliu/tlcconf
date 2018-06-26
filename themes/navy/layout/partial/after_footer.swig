@@ -18,8 +18,3 @@
 {{ js('js/plugins') }}
 <!-- endbuild -->
 {% endif %}
-<script type="text/javascript">
-$(document).ready(function(){ 
-    $('#carousel').carousel({curDisplay: 0, autoPlay: false, interval: 3000});
-});
-</script>

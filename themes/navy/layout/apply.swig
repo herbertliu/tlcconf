@@ -14,9 +14,7 @@
           <div class="review-pictures">
             <div class="requirements-title">往期图集</div>
             <div class="carousel" id="carousel">
-              <img src="http://www.17sucai.com/preview/67633/2017-08-29/%E8%BD%AE%E6%92%AD/img/1.jpg" data-url="http://2018.tlc.ivweb.io/" alt="">
-              <img src="http://www.17sucai.com/preview/67633/2017-08-29/%E8%BD%AE%E6%92%AD/img/2.jpg" data-url="http://2018.tlc.ivweb.io/" alt="">
-              <img src="http://www.17sucai.com/preview/67633/2017-08-29/%E8%BD%AE%E6%92%AD/img/3.jpg" data-url="http://2018.tlc.ivweb.io/" alt="">
+
             </div>
           </div>
           <div class="requirements">
