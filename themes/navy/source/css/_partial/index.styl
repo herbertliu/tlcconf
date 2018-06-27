@@ -30,6 +30,8 @@
   text-align: center
   letter-spacing: 8px
   margin: 0px 0px 70px
+  line-height: 22px
+  padding: 0 20px
   @media mq-normal
     font-size: 32px;
 
@@ -256,7 +258,7 @@
 .subject-branch 
   margin: 0 auto
   width: 358px
-  height: 120px
+  height: 140px
   background-color: rgb(255, 255, 255)
   margin-bottom: 14px
   @media mq-normal
@@ -329,6 +331,7 @@
         font-size: 22px
     .desc
       font-size: 14px
+      line-height: 1.3em
       color: rgb(51, 51, 51)
       @media mq-normal
         font-size: 18px 
@@ -403,11 +406,10 @@
     display: table  
 
 #speaker-subject-wrap 
-  padding-top: 37px
-  padding-bottom: 20px
   margin: 0px auto
   @media mq-normal
     padding-top: 74px
+    padding-bottom: 20px
   ul:after
     clear: both
     content: ''
@@ -440,7 +442,7 @@
     width: 312px
     border-bottom: 1px dashed rgb(255, 255, 255)
     font-size: 16px
-    padding: 30px 0 15px
+    padding: 20px 0 15px
     margin: 0 auto 15px
     @media mq-normal
       font-size: 32px
@@ -450,7 +452,7 @@
     font-size: 12px
     color: rgb(255, 255, 255)
     width: 300px
-    text-align: center
+    text-align: left
     line-height: 16px
     margin: 0px auto
     @media mq-normal
@@ -475,7 +477,7 @@
     width: 312px
     border-bottom: 1px dashed #000
     font-size: 16px
-    padding: 30px 0 15px
+    padding: 20px 0 15px
     margin: 0 auto 15px
     @media mq-normal
       font-size: 32px
@@ -485,7 +487,7 @@
     font-size: 12px
     color: #000
     width: 300px
-    text-align: center
+    text-align: left
     line-height: 16px
     margin: 0px auto
     @media mq-normal
@@ -499,6 +501,8 @@
   height: 120px
   background-color: rgb(255, 255, 255)
   margin-bottom: 14px
+  display: flex
+  align-items: center
   &:nth-child(3n)
     margin-right: 0
   @media mq-normal
@@ -506,7 +510,6 @@
     margin-right: 16px
     height: 160px
     width: 388px
-    padding-top: 40px
     padding-left: 20px
   .speaker-avatar
     float: left
@@ -545,10 +548,12 @@
       position: relative
       h1  
         text-align: center
-        font-size: 36px
+        font-size: 30px
         color: #fff
         margin-top: 100px
         letter-spacing: 8px
+        @media mq-normal
+          font-size: 36px
       .tab-scroller-wrap
         position: absolute
         bottom: 0
@@ -635,19 +640,26 @@
       .inner
         line-height: 30px
         color: #fff
-        font-size: 20px
+        font-size: 14px
+        padding: 0 10px
+        line-height: 22px
         .title
           margin-top: 200px
           margin-bottom: 30px
+        @media mq-normal
+          font-size: 20px
+          line-height: 30px
   .tab-content
     .review-pictures
       margin-top: 60px
       .requirements-title
         color: #5c53ff
-        font-size: 30px
+        font-size: 20px
         font-weight: bold
         text-align: center
         margin-bottom: 100px
+        @media mq-normal 
+          font-size: 30px
       .carousel
         position: relative
         z-index: 2
@@ -700,36 +712,51 @@
       #bannerNav ul li.on a
         width:12px
     .requirements
+      padding: 0 10px
       margin-top: 60px
       .requirements-title
         color: #5c53ff
-        font-size: 30px
+        font-size: 20px
         font-weight: bold
         text-align: center
         margin-bottom: 50px
+        @media mq-normal 
+          font-size: 30px
       .section
         margin-bottom: 40px
         .section-title
           margin: 10px 0
           color: #5c53ff
-          font-size: 24px
-          font-weight: bold    
+          font-size: 16px
+          font-weight: bold
+          @media mq-normal    
+            font-size: 24px
         .section-content
           p
-            line-height: 30px
+            line-height: 22px
             color: #3e4249
-            font-size: 20px  
+            font-size: 12px
+            @media mq-normal 
+              line-height: 30px
+              font-size: 20px
       .apply-button
         padding: 0 33px
         border-radius: 6px
         text-align: center
         line-height: 59px
-        height: 59px
-        font-size: 16px
-        border-radius: 4px
         text-decoration: none
         color: #fff
         background: linear-gradient(90deg, #3379ff, #852cff)
-        width: 170px
         display: block
         margin: 0 auto 100px auto
+        width: 160px
+        height: 50px
+        font-size: 14px
+        line-height: 50px
+        padding: 0
+        border-radius: 2px
+        @media mq-normal
+          width: 170px
+          height: 59px
+          font-size: 16px
+          border-radius: 4px
