@@ -394,6 +394,8 @@ body {
   text-align: center;
   letter-spacing: 8px;
   margin: 0px 0px 70px;
+  line-height: 22px;
+  padding: 0 20px;
 }
 @media screen and (min-width: 769px) {
   #banner-bio {
@@ -717,7 +719,7 @@ body {
 .subject-branch {
   margin: 0 auto;
   width: 358px;
-  height: 120px;
+  height: 140px;
   background-color: #fff;
   margin-bottom: 14px;
 }
@@ -821,6 +823,7 @@ body {
 }
 #intro-user-wrap .intro-user-item .desc {
   font-size: 14px;
+  line-height: 1.3em;
   color: #333;
 }
 @media screen and (min-width: 769px) {
@@ -932,13 +935,12 @@ body {
   display: table;
 }
 #speaker-subject-wrap {
-  padding-top: 37px;
-  padding-bottom: 20px;
   margin: 0px auto;
 }
 @media screen and (min-width: 769px) {
   #speaker-subject-wrap {
     padding-top: 74px;
+    padding-bottom: 20px;
   }
 }
 #speaker-subject-wrap ul:after {
@@ -984,7 +986,7 @@ body {
   width: 312px;
   border-bottom: 1px dashed #fff;
   font-size: 16px;
-  padding: 30px 0 15px;
+  padding: 20px 0 15px;
   margin: 0 auto 15px;
 }
 @media screen and (min-width: 769px) {
@@ -998,7 +1000,7 @@ body {
   font-size: 12px;
   color: #fff;
   width: 300px;
-  text-align: center;
+  text-align: left;
   line-height: 16px;
   margin: 0px auto;
 }
@@ -1032,7 +1034,7 @@ body {
   width: 312px;
   border-bottom: 1px dashed #000;
   font-size: 16px;
-  padding: 30px 0 15px;
+  padding: 20px 0 15px;
   margin: 0 auto 15px;
 }
 @media screen and (min-width: 769px) {
@@ -1046,7 +1048,7 @@ body {
   font-size: 12px;
   color: #000;
   width: 300px;
-  text-align: center;
+  text-align: left;
   line-height: 16px;
   margin: 0px auto;
 }
@@ -1063,6 +1065,17 @@ body {
   height: 120px;
   background-color: #fff;
   margin-bottom: 14px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
 }
 .speaker-subject-items:nth-child(3n) {
   margin-right: 0;
@@ -1073,7 +1086,6 @@ body {
     margin-right: 16px;
     height: 160px;
     width: 388px;
-    padding-top: 40px;
     padding-left: 20px;
   }
 }
@@ -1123,10 +1135,15 @@ body {
 }
 .speaker-wrap .tab-header .inner h1 {
   text-align: center;
-  font-size: 36px;
+  font-size: 30px;
   color: #fff;
   margin-top: 100px;
   letter-spacing: 8px;
+}
+@media screen and (min-width: 769px) {
+  .speaker-wrap .tab-header .inner h1 {
+    font-size: 36px;
+  }
 }
 .speaker-wrap .tab-header .inner .tab-scroller-wrap {
   position: absolute;
@@ -1239,21 +1256,34 @@ body {
 .apply-wrap .header .wrapper .inner {
   line-height: 30px;
   color: #fff;
-  font-size: 20px;
+  font-size: 14px;
+  padding: 0 10px;
+  line-height: 22px;
 }
 .apply-wrap .header .wrapper .inner .title {
   margin-top: 200px;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 769px) {
+  .apply-wrap .header .wrapper .inner {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 .apply-wrap .tab-content .review-pictures {
   margin-top: 60px;
 }
 .apply-wrap .tab-content .review-pictures .requirements-title {
   color: #5c53ff;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bold;
   text-align: center;
   margin-bottom: 100px;
+}
+@media screen and (min-width: 769px) {
+  .apply-wrap .tab-content .review-pictures .requirements-title {
+    font-size: 30px;
+  }
 }
 .apply-wrap .tab-content .review-pictures .carousel {
   position: relative;
@@ -1330,14 +1360,20 @@ body {
   width: 12px;
 }
 .apply-wrap .tab-content .requirements {
+  padding: 0 10px;
   margin-top: 60px;
 }
 .apply-wrap .tab-content .requirements .requirements-title {
   color: #5c53ff;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bold;
   text-align: center;
   margin-bottom: 50px;
+}
+@media screen and (min-width: 769px) {
+  .apply-wrap .tab-content .requirements .requirements-title {
+    font-size: 30px;
+  }
 }
 .apply-wrap .tab-content .requirements .section {
   margin-bottom: 40px;
@@ -1345,31 +1381,52 @@ body {
 .apply-wrap .tab-content .requirements .section .section-title {
   margin: 10px 0;
   color: #5c53ff;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: bold;
 }
+@media screen and (min-width: 769px) {
+  .apply-wrap .tab-content .requirements .section .section-title {
+    font-size: 24px;
+  }
+}
 .apply-wrap .tab-content .requirements .section .section-content p {
-  line-height: 30px;
+  line-height: 22px;
   color: #3e4249;
-  font-size: 20px;
+  font-size: 12px;
+}
+@media screen and (min-width: 769px) {
+  .apply-wrap .tab-content .requirements .section .section-content p {
+    line-height: 30px;
+    font-size: 20px;
+  }
 }
 .apply-wrap .tab-content .requirements .apply-button {
   padding: 0 33px;
   border-radius: 6px;
   text-align: center;
   line-height: 59px;
-  height: 59px;
-  font-size: 16px;
-  border-radius: 4px;
   text-decoration: none;
   color: #fff;
   background: -webkit-linear-gradient(0deg, #3379ff, #852cff);
   background: -moz-linear-gradient(0deg, #3379ff, #852cff);
   background: -ms-linear-gradient(0deg, #3379ff, #852cff);
   background: linear-gradient(90deg, #3379ff, #852cff);
-  width: 170px;
   display: block;
   margin: 0 auto 100px auto;
+  width: 160px;
+  height: 50px;
+  font-size: 14px;
+  line-height: 50px;
+  padding: 0;
+  border-radius: 2px;
+}
+@media screen and (min-width: 769px) {
+  .apply-wrap .tab-content .requirements .apply-button {
+    width: 170px;
+    height: 59px;
+    font-size: 16px;
+    border-radius: 4px;
+  }
 }
 #sidebar {
   width: 220px;
