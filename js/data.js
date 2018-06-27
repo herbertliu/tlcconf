@@ -278,8 +278,16 @@ e.exports=function(e){return null!=e&&(n(e)||r(e)||!!e._isBuffer)}},function(e,t
                     imgs: reviewImageInfo.imgs
                 }
             });
+
+            var requirementsTpl = '{% for item in infos %}<div class="section"> <div class="section-title">{{item.title}}</div> <div class="section-content"> {% for textItem in item.info %}<p>{{textItem.text}}</p>{% endfor %} </div> </div>{% endfor %}'
+            var requirementsOutput = swig.render(requirementsTpl, {
+                locals: {
+                    infos: reviewImageInfo.infos
+                }
+            });            
             
             $('#carousel').html(contentOutput);
+            $('#section-wrapper').html(requirementsOutput);
 
             $(document).ready(function(){ 
                 $('#carousel').carousel({curDisplay: 0, autoPlay: false, interval: 3000});
@@ -287,6 +295,7 @@ e.exports=function(e){return null!=e&&(n(e)||r(e)||!!e._isBuffer)}},function(e,t
         };
 
         renderReviewImages(data.reviewImageInfo);
+        renderFriendLink(data.friendlinkInfo);
     }
 
   }());  
