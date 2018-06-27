@@ -627,6 +627,7 @@
           margin-top: 10px
 
 .apply-wrap
+  overflow: hidden
   .header
     background: url('https://qpic.url.cn/feeds_pic/Q3auHgzwzM7Vlqt50QGMlZgZs0nLGv4jLwd7ribvbHv0g07RyXqB97g/') center center
     height: 400px   
@@ -650,21 +651,28 @@
       .carousel
         position: relative
         z-index: 2
-        height: 250px
+        height: 125px
         margin-top: 20px
         transform-style: preserve-3d
         perspective: 800px
+        @media mq-normal
+          height: 250px
         img
           position: absolute
           left:50%
           top:50%
-          width:504px
-          height:266px
-          margin-left:-252px
-          margin-top:-133px
+          width:252px
+          height:133px
+          margin-left:-126px
+          margin-top:-66.5px
           transition:transform .5s ease-in-out
           box-shadow:8px 8px 20px rgba(0,0,0,.2)
           cursor:pointer
+          @media mq-normal
+            width:504px
+            height:266px
+            margin-left:-252px
+            margin-top:-133px
       #bannerNav
         position:relative
         margin-top:20px
