@@ -824,11 +824,11 @@ body {
 #intro-user-wrap .intro-user-item .desc {
   font-size: 14px;
   line-height: 1.3em;
-  color: #333;
+  color: #3e4249;
 }
 @media screen and (min-width: 769px) {
   #intro-user-wrap .intro-user-item .desc {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 .view-all {
