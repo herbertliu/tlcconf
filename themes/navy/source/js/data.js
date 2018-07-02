@@ -95,7 +95,7 @@ e.exports=function(e){return null!=e&&(n(e)||r(e)||!!e._isBuffer)}},function(e,t
             }
         }
 
-        var speakerTpl = '{% for item in speakerItems %}  <li class="intro-user-item"> <img src="{{ item.avatar }}"> <div class="intro-user-info"> <p class="name">{{ item.name }}</p> <p class="desc">{{ item.description }}</p> </div> </li>  {% endfor %}'
+        var speakerTpl = '{% for item in speakerItems %}  <li class="intro-user-item"> <img src="{{ item.avatar }}"> <div class="intro-user-info"> <p class="name">{{ item.name }}</p> <p class="desc">{{ item.brief }}</p> </div> </li>  {% endfor %}'
         var speakerOutput = swig.render(speakerTpl, {
             filename: '/speakerTpl',
             locals: {
@@ -158,7 +158,7 @@ e.exports=function(e){return null!=e&&(n(e)||r(e)||!!e._isBuffer)}},function(e,t
         };
 
         var renderTabContent = function(speakerItems) {
-            var tabContentTpl = '{% for item in speakerItems %}  <li class="intro-user-item"> <img src="{{item.avatar}}"> <div class="intro-user-info"> <p class="name">{{item.name}}</p> <p class="desc">{{item.intro}}</p> </div> </li>  {% endfor %}'
+            var tabContentTpl = '{% for item in speakerItems %}  <li class="intro-user-item"> <img src="{{item.avatar}}"> <div class="intro-user-info"> <p class="name">{{item.name}}</p> <p class="desc">{{item.brief}}</p> </div> </li>  {% endfor %}'
             var tabContentOutput = swig.render(tabContentTpl, {
                 locals: {
                     speakerItems: speakerItems
