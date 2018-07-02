@@ -84,12 +84,22 @@ e.exports=function(e){return null!=e&&(n(e)||r(e)||!!e._isBuffer)}},function(e,t
         document.getElementById('subject-wrap').innerHTML = subjectOutput;
     };
 
-    var renderSpeaker = function(speakerInfo) {
+    var renderSpeaker = function(subjectInfo) {
+        var speakderItems = [];
+
+        for (var i = 0; i < subjectInfo.items.length; i ++) {
+            for (var j = 0; j < subjectInfo.items[i].speakers.length; j ++) {
+                if (subjectInfo.items[i].speakers[j].isShowIndex) {
+                    speakderItems.push(subjectInfo.items[i].speakers[j])
+                }
+            }
+        }
+
         var speakerTpl = '{% for item in speakerItems %}  <li class="intro-user-item"> <img src="{{ item.avatar }}"> <div class="intro-user-info"> <p class="name">{{ item.name }}</p> <p class="desc">{{ item.description }}</p> </div> </li>  {% endfor %}'
         var speakerOutput = swig.render(speakerTpl, {
             filename: '/speakerTpl',
             locals: {
-                speakerItems: speakerInfo.items
+                speakerItems: speakderItems
             }
         });
 
@@ -127,7 +137,7 @@ e.exports=function(e){return null!=e&&(n(e)||r(e)||!!e._isBuffer)}},function(e,t
         
         renderFeature(data.featureInfo);
         renderSubject(data.subjectInfo);
-        renderSpeaker(data.speakerInfo);
+        renderSpeaker(data.subjectInfo);
         renderPartner(data.sponsorInfo);
         renderFriendLink(data.friendlinkInfo);
     };
