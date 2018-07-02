@@ -217,65 +217,46 @@ e.exports=function(e){return null!=e&&(n(e)||r(e)||!!e._isBuffer)}},function(e,t
     };
 
     var renderSchedulePage = function(data) {
+        renderFriendLink(data.friendlinkInfo);
 
-        var initialTabContent = function() {
-            renderFriendLink(data.friendlinkInfo);
-            renderTabContent('全部', getAllSchedules());
-        };
+        var headerData = [];
 
-        var getAllSchedules = function() {
-            var schedulesItems = [];
-            for (var i = 0; i < items.length; i ++) { 
-                schedulesItems = schedulesItems.concat(items[i].schedules);
-            }
-            return schedulesItems;
-        };
+        var tableData = {};
 
-        var renderTabContent = function(title, schedulesItems) {
-            var tabContentTpl = '<h1> <i></i> {{title}}</h1> <ul> {% for item in schedulesItems %}<li> <div class="time-slot"> {{item.timeline}}<span class="border"></span> <span class="dot"></span> </div> <div class="plan">{{item.plan}}</div> </li>{% endfor %}</ul>'
-            var tabContentOutput = swig.render(tabContentTpl, {
-                locals: {
-                    title: title,
-                    schedulesItems: schedulesItems
-                }
-            });
-            
-            $('#timeline-wrap').html(tabContentOutput);
-        };
-
-        var items = data.subjectInfo.items;
-
-        var headItems = ['全部'];
-        
-        for (var i = 0; i < items.length; i ++) {
-            headItems.push(items[i].title);
+        for ( var i = 0; i < data.subjectInfo.items[0].schedules.length; i ++) {
+            tableData[data.subjectInfo.items[0].schedules[i].timeline] = [];
         }
 
-        var tabHeadTpl = '{% for item in headItems %}  <li>{{ item }}</li>  {% endfor %}'
-        var tabHeadOutput = swig.render(tabHeadTpl, {
-            filename: '/tabHeadTpl',
+        for ( var i = 0; i < data.subjectInfo.items.length; i ++) {
+            headerData.push(data.subjectInfo.items[i].title);
+            for (var j = 0; j < data.subjectInfo.items[i].schedules.length; j ++) {
+                var timeline = data.subjectInfo.items[i].schedules[j].timeline;
+                var plan = data.subjectInfo.items[i].schedules[j].plan;
+
+                if (plan) {
+                    tableData[timeline].push(plan);
+                }
+            }
+
+            for (var key in tableData) {
+                if (tableData[key].length !== i + 1) {
+                    tableData[key].push('/')
+                }
+            }
+        }
+
+        console.log(headerData)
+
+        var contentTpl = '<tr> <td class="bold">时间</td> {% for headerItem in headerData %}<td class="bold blue">{{headerItem}}</td>{% endfor %}</tr>{% for key, val in tableData %}<tr> <td>{{ key }}</td> {% for item in val %} <td> <p class="blue">{{item}}</p> </td>{% endfor %} </tr>{% endfor %}';
+
+        var contentOutput = swig.render(contentTpl, {
             locals: {
-                headItems: headItems
+                headerData: headerData,
+                tableData: tableData
             }
         });
         
-        $('#tab-head-items').html(tabHeadOutput);
-        initialTabContent();
-        
-        $('#tab-head-items li').click(function() {
-            var index = $(this).index();
-            var text = $(this).text();
-
-            var schedulesItems = [];
-
-            if (index) {
-                schedulesItems = items[index].schedules;
-            } else {
-                speakerItems = getAllSchedules();
-            }
-
-            renderTabContent(text, schedulesItems);
-        });
+        $('#schedule-wrap').html(contentOutput);
         
     };
 
