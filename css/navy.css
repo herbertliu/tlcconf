@@ -1247,6 +1247,10 @@ body {
 .schedule-wrap .tab-content table .blue {
   color: #3379ff;
 }
+.schedule-wrap .tab-content table .blue a {
+  text-decoration: none;
+  color: #3379ff;
+}
 .schedule-wrap .tab-content table p {
   margin: 0 25px;
   line-height: 22px;

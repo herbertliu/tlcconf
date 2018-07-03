@@ -224,6 +224,17 @@ e.exports=function(e){return null!=e&&(n(e)||r(e)||!!e._isBuffer)}},function(e,t
 
         var tableData = {};
 
+        var speakerMap = {};
+        for (var i = 0; i < data.subjectInfo.items.length; i ++) {
+            for (var j = 0; j < data.subjectInfo.items[i].speakers.length; j ++) {
+
+                var speakerItem = data.subjectInfo.items[i].speakers[j];
+
+                speakerMap[speakerItem.number] = speakerItem;
+            }
+        }
+
+
         for ( var i = 0; i < data.subjectInfo.items[0].schedules.length; i ++) {
             tableData[data.subjectInfo.items[0].schedules[i].timeline] = [];
         }
@@ -233,9 +244,12 @@ e.exports=function(e){return null!=e&&(n(e)||r(e)||!!e._isBuffer)}},function(e,t
             for (var j = 0; j < data.subjectInfo.items[i].schedules.length; j ++) {
                 var timeline = data.subjectInfo.items[i].schedules[j].timeline;
                 var plan = data.subjectInfo.items[i].schedules[j].plan;
+                var number = data.subjectInfo.items[i].schedules[j].number;
 
                 if (plan) {
                     tableData[timeline].push(plan);
+                } else if (number) {
+                    tableData[timeline].push(speakerMap[number]);
                 }
             }
 
@@ -246,7 +260,10 @@ e.exports=function(e){return null!=e&&(n(e)||r(e)||!!e._isBuffer)}},function(e,t
             }
         }
 
-        var contentTpl = '<tr> <td class="bold">时间</td> {% for headerItem in headerData %}<td class="bold blue">{{headerItem}}</td>{% endfor %}</tr>{% for key, val in tableData %}<tr> <td>{{ key }}</td> {% for item in val %} <td> <p class="blue">{{item}}</p> </td>{% endfor %} </tr>{% endfor %}';
+        console.log(tableData)
+
+
+        var contentTpl = '<tr> <td class="bold">时间</td> {% for headerItem in headerData %}<td class="bold blue">{{headerItem}}</td>{% endfor %}</tr>{% for key, val in tableData %}<tr> <td>{{ key }}</td> {% for item in val %} <td> {% if item.topic %}<p class="blue"><a href="/detail/?number={{item.number}}" target="_blank">{{item.topic}}</a></p> <p>{{item.name}}</p>{% else %}<p class="blue">{{item}}</p> {% endif %}</td>{% endfor %} </tr>{% endfor %}';
 
         var contentOutput = swig.render(contentTpl, {
             locals: {
