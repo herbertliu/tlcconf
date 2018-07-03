@@ -29,6 +29,18 @@
   <div class="wrapper">
     <div class="inner">
       <div id="intro-user-wrap">
+        <div class="publisher-title"></div>
+        <ul id="publisher-items">
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="content-wrap">
+  <div class="wrapper">
+    <div class="inner">
+      <div id="intro-user-wrap">
         <div class="intro-user-title"></div>
         <ul id="speaker-items">
 
