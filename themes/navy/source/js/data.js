@@ -94,8 +94,7 @@ e.exports=function(e){return null!=e&&(n(e)||r(e)||!!e._isBuffer)}},function(e,t
                 }
             }
         }
-
-        var speakerTpl = '{% for item in speakerItems %}  <li class="intro-user-item"> <img src="{{ item.avatar }}"> <div class="intro-user-info"> <p class="name">{{ item.name }}</p> <p class="desc">{{ item.brief }}</p> </div> </li>  {% endfor %}'
+        var speakerTpl = '{% for item in speakerItems %}  <li class="intro-user-item"> <a href="/detail/?number={{ item.number }}" target="_blank"><img src="{{ item.avatar }}"></a> <div class="intro-user-info"> <p class="name"><a href="/detail/?number={{ item.number }}" target="_blank">{{ item.name }}</a></p> <p class="desc">{{ item.brief }}</p> </div> </li>  {% endfor %}'
         var speakerOutput = swig.render(speakerTpl, {
             filename: '/speakerTpl',
             locals: {
@@ -158,7 +157,7 @@ e.exports=function(e){return null!=e&&(n(e)||r(e)||!!e._isBuffer)}},function(e,t
         };
 
         var renderTabContent = function(speakerItems) {
-            var tabContentTpl = '{% for item in speakerItems %}  <li class="intro-user-item"> <img src="{{item.avatar}}"> <div class="intro-user-info"> <p class="name">{{item.name}}</p> <p class="desc">{{item.brief}}</p> </div> </li>  {% endfor %}'
+            var tabContentTpl = '{% for item in speakerItems %}  <li class="intro-user-item"><a href="/detail/?number={{ item.number }}" target="_blank"><img src="{{item.avatar}}"> </a><div class="intro-user-info"> <a href="/detail/?number={{ item.number }}" target="_blank"><p class="name">{{item.name}}</a></p> <p class="desc">{{item.brief}}</p> </div> </li>  {% endfor %}'
             var tabContentOutput = swig.render(tabContentTpl, {
                 locals: {
                     speakerItems: speakerItems
@@ -204,7 +203,7 @@ e.exports=function(e){return null!=e&&(n(e)||r(e)||!!e._isBuffer)}},function(e,t
     };
 
     var renderSubjectPage = function(data) {
-        var subjectTpl = '{% for item in subjectItems %}<div id="speaker-subject-wrap"> {% if item.isMain %}<div class="speaker-subject-title"></div> {% endif %}<div class="{% if item.isMain %} speaker-subject-main {% else %} speaker-subject-branch {% endif %}"> <p class="speaker-subject-main-title">{{item.title}}</p> <p class="speaker-subject-main-content">{{item.description}}</p> </div> <ul> {% for speakerItem in item.speakers %}<li class="speaker-subject-items"> <div class="speaker-avatar"><img src="{{speakerItem.avatar}}" /></div> <div class="speaker-info"> <p class="speaker-topic">{{speakerItem.topic}}</p> <p class="speaker-name">{{speakerItem.name}}</p> </div> </li>{% endfor %}</ul> </div> {% endfor %}';
+        var subjectTpl = '{% for item in subjectItems %}<div id="speaker-subject-wrap"> {% if item.isMain %}<div class="speaker-subject-title"></div> {% endif %}<div class="{% if item.isMain %} speaker-subject-main {% else %} speaker-subject-branch {% endif %}"> <p class="speaker-subject-main-title">{{item.title}}</p> <p class="speaker-subject-main-content">{{item.description}}</p> </div> <ul> {% for speakerItem in item.speakers %}<li class="speaker-subject-items"> <div class="speaker-avatar"><a href="/detail/?number={{ speakerItem.number }}" target="_blank"><img src="{{speakerItem.avatar}}" /></a></div> <div class="speaker-info"><p class="speaker-topic"><a href="/detail/?number={{ speakerItem.number }}" target="_blank">{{speakerItem.topic}}</a></p> <p class="speaker-name">{{speakerItem.name}}</p> </div> </li>{% endfor %}</ul> </div> {% endfor %}';
 
         var subjectOutput = swig.render(subjectTpl, {
             filename: '/subjectTpl',
@@ -244,8 +243,6 @@ e.exports=function(e){return null!=e&&(n(e)||r(e)||!!e._isBuffer)}},function(e,t
                 }
             }
         }
-
-        console.log(headerData)
 
         var contentTpl = '<tr> <td class="bold">时间</td> {% for headerItem in headerData %}<td class="bold blue">{{headerItem}}</td>{% endfor %}</tr>{% for key, val in tableData %}<tr> <td>{{ key }}</td> {% for item in val %} <td> <p class="blue">{{item}}</p> </td>{% endfor %} </tr>{% endfor %}';
 
