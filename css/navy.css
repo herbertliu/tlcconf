@@ -773,6 +773,21 @@ body {
   padding-bottom: 70px;
   margin: 0px auto;
 }
+#intro-user-wrap .publisher-title {
+  width: 271.5px;
+  height: 33.5px;
+  background: url("https://qpic.url.cn/feeds_pic/Q3auHgzwzM6iaag9ZJoJUf7dZpx2S3loLespPwVT5vQdBEfxWEOrVHw/") no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  margin: 0px auto 16px;
+}
+@media screen and (min-width: 769px) {
+  #intro-user-wrap .publisher-title {
+    width: 543px;
+    height: 67px;
+  }
+}
 #intro-user-wrap .intro-user-title {
   width: 271.5px;
   height: 33.5px;

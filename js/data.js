@@ -86,6 +86,19 @@ e.exports=function(e){return null!=e&&(n(e)||r(e)||!!e._isBuffer)}},function(e,t
         document.getElementById('subject-wrap').innerHTML = subjectOutput;
     };
 
+    var renderPublisher = function(publisherInfo) {
+        
+        var publisherTpl = '{% for item in publisherItems %}  <li class="intro-user-item"> <a href="/subjects/}" target="_blank"><img src="{{ item.avatar }}"></a> <div class="intro-user-info"> <p class="name"><a href="/subjects/" target="_blank">{{ item.name }}</a></p> <p class="desc">{{ item.brief }}</p> </div> </li>  {% endfor %}'
+        var publisherOutput = swig.render(publisherTpl, {
+            filename: '/publisherTpl',
+            locals: {
+                publisherItems: publisherInfo.items
+            }
+        });
+
+        document.getElementById('publisher-items').innerHTML = publisherOutput;
+    };
+
     var renderSpeaker = function(subjectInfo) {
         var speakderItems = [];
 
@@ -138,6 +151,7 @@ e.exports=function(e){return null!=e&&(n(e)||r(e)||!!e._isBuffer)}},function(e,t
         
         renderFeature(data.featureInfo);
         renderSubject(data.subjectInfo);
+        renderPublisher(data.publisherInfo);
         renderSpeaker(data.subjectInfo);
         renderPartner(data.sponsorInfo);
         renderFriendLink(data.friendlinkInfo);
@@ -259,9 +273,6 @@ e.exports=function(e){return null!=e&&(n(e)||r(e)||!!e._isBuffer)}},function(e,t
                 }
             }
         }
-
-        console.log(tableData)
-
 
         var contentTpl = '<tr> <td class="bold">时间</td> {% for headerItem in headerData %}<td class="bold blue">{{headerItem}}</td>{% endfor %}</tr>{% for key, val in tableData %}<tr> <td>{{ key }}</td> {% for item in val %} <td> {% if item.topic %}<p class="blue"><a href="/detail/?number={{item.number}}" target="_blank">{{item.topic}}</a></p> <p>{{item.name}}</p>{% else %}<p class="blue">{{item}}</p> {% endif %}</td>{% endfor %} </tr>{% endfor %}';
 
