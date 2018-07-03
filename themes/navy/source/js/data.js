@@ -88,7 +88,7 @@ e.exports=function(e){return null!=e&&(n(e)||r(e)||!!e._isBuffer)}},function(e,t
 
     var renderPublisher = function(publisherInfo) {
         
-        var publisherTpl = '{% for item in publisherItems %}  <li class="intro-user-item"> <a href="/subjects/}" target="_blank"><img src="{{ item.avatar }}"></a> <div class="intro-user-info"> <p class="name"><a href="/subjects/" target="_blank">{{ item.name }}</a></p> <p class="desc">{{ item.brief }}</p> </div> </li>  {% endfor %}'
+        var publisherTpl = '{% for item in publisherItems %}  <li class="intro-user-item"> <a href="/subjects/" target="_blank"><img src="{{ item.avatar }}"></a> <div class="intro-user-info"> <p class="name"><a href="/subjects/" target="_blank">{{ item.name }}</a></p> <p class="desc">{{ item.brief }}</p> </div> </li>  {% endfor %}'
         var publisherOutput = swig.render(publisherTpl, {
             filename: '/publisherTpl',
             locals: {
