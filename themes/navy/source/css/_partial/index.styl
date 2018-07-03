@@ -597,7 +597,41 @@
               width: 237px
               font-size: 20px
               
-
+#schedule-wrap
+  display: none
+  @media mq-normal
+    display: block    
+#schedule-wrap-h5
+  display: block
+  .topic-item
+    margin-left: 12px
+    margin-top: 18px
+    padding: 5px 14px
+    border: 1px solid #187fc4
+    .title
+      margin-bottom: 6px
+      font-size: 15px
+      color: #3e3a39
+    .content
+      display: flex
+      .avatar
+        margin-right: 10px
+        img
+          width: 55px
+          height: 55px
+          border-radius: 50%
+          border: 1px solid #dcdddd
+      .author-info
+        display: flex
+        flex-direction: column
+        justify-content: center
+        .name
+          font-size: 15px
+          color: #187fc4
+          margin-bottom: 10px
+        .title
+          font-size: 12px
+          color: #898989
 .schedule-wrap 
   h1
     display: flex
@@ -627,7 +661,6 @@
           line-height: 80px
           background: rgba(255,255,255, 0.2)
           margin-right: 1px
-
   .tab-content 
     table
       margin: 40px 0
