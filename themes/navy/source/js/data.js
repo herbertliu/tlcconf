@@ -38,6 +38,8 @@ e.exports=function(e){return null!=e&&(n(e)||r(e)||!!e._isBuffer)}},function(e,t
                     renderSchedulePage(data);
                 } else if (/apply/.test(url)) {
                     renderApplyPage(data);
+                } else if (/detail/.test(url)) {
+                    renderDetailPage(data);
                 } else {
                     renderIndexPage(data);
                 }
@@ -284,6 +286,55 @@ e.exports=function(e){return null!=e&&(n(e)||r(e)||!!e._isBuffer)}},function(e,t
 
         renderReviewImages(data.reviewImageInfo);
         renderFriendLink(data.friendlinkInfo);
+    }
+
+    var renderDetailPage = function(data) {
+
+        var getUrlArgObject = function() {  
+            var args=new Object();  
+            var query=location.search.substring(1); 
+            var pairs=query.split(",");
+            for(var i=0;i<pairs.length;i++){  
+                var pos=pairs[i].indexOf('=');  
+                if(pos==-1){
+                    continue;  
+                }  
+                var argname=pairs[i].substring(0,pos);  
+                var value=pairs[i].substring(pos+1);  
+                args[argname]=unescape(value); 
+            }  
+            return args;
+        }  
+
+        var renderTopicInfo = function(subjectInfo) {
+            var urlObject = getUrlArgObject();
+            var number = parseInt(urlObject['number']);
+            
+            var speakerItem;
+            for (var i = 0; i < subjectInfo.items.length; i ++) {
+                for (var j = 0; j < subjectInfo.items[i].speakers.length; j ++) {
+
+                    if (subjectInfo.items[i].speakers[j].number === number) {
+                        speakerItem = subjectInfo.items[i].speakers[j];
+                        speakerItem.branchName = subjectInfo.items[i].title;
+                    }
+                }
+            }
+
+            var contentTpl = '<div class="base-info"> <div> <div class="title">演讲：{{speakerItem.topic}}</div> <div class="author">{{speakerItem.name}} | {{speakerItem.brief}}</div> </div> <div class="logo-url"> <img src="{{speakerItem.avatar}}" /> </div> </div> <div class="topic-detail"> <p>{{speakerItem.intro}}</p> </div> <div class="conf-info"> <div class="location"> <i></i> <div> <p class="key">地点</p> <p class="value">{{speakerItem.location}}</p> </div> </div> <div class="time"> <i></i> <div> <p class="key">时间</p> <p class="value">{{speakerItem.time}}</p> </div> </div> <div class="branch"> <i></i> <div> <p class="key">所属会场</p> <p class="value">{{speakerItem.branchName}}</p> </div> </div> </div>'
+            var contentOutput = swig.render(contentTpl, {
+                locals: {
+                    speakerItem: speakerItem
+                }
+            });        
+            
+            $('#detail-wrap').html(contentOutput);
+
+        };
+
+        renderTopicInfo(data.subjectInfo);
+        renderFriendLink(data.friendlinkInfo);
+
     }
 
   }());  
