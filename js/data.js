@@ -208,7 +208,7 @@ e.exports=function(e){return null!=e&&(n(e)||r(e)||!!e._isBuffer)}},function(e,t
             var speakerItems = [];
 
             if (index) {
-                speakerItems = items[index].speakers;
+                speakerItems = items[index - 1].speakers;
             } else {
                 speakerItems = getAllSpeakers();
             }
