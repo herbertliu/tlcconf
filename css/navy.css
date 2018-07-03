@@ -1215,6 +1215,11 @@ body {
 #schedule-wrap-h5 {
   display: block;
 }
+@media screen and (min-width: 769px) {
+  #schedule-wrap-h5 {
+    display: none;
+  }
+}
 #schedule-wrap-h5 .topic-item {
   margin-left: 12px;
   margin-top: 18px;
