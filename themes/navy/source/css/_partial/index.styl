@@ -614,8 +614,6 @@
     margin-bottom: 14px
     display: flex
     align-items: center
-    &:nth-child(3n)
-      margin-right: 0
     @media mq-normal
       float: left
       margin-right: 16px
@@ -623,29 +621,46 @@
       width: 388px
       padding-left: 20px
     .title
-      font-size: 20px
+      font-size: 16px
       color: #3577ff
+      margin-left: 10px
     .content
       display: flex
-      .avatar
-        margin-right: 10px
-        img
-          width: 90px
-          height: 90px
-          border-radius: 50%
-          border: 1px solid #dcdddd
-      .author-info
+      width: 100%
+      justify-content: space-between
+      .author-wrap
         display: flex
-        flex-direction: column
-        justify-content: center
-        .name
-          font-size: 20px
-          color: #3577ff
-          line-height: 24px
-          margin-bottom: 12px
-        .title
-          color: #999
-          font-size: 18px
+        .avatar
+          width: 90px
+          margin-right: 10px
+          img
+            width: 90px
+            height: 90px
+            border-radius: 50%
+            border: 1px solid #dcdddd
+        .author-info
+          display: flex
+          flex-direction: column
+          justify-content: center
+          .name
+            font-size: 16px
+            color: #3577ff
+            line-height: 24px
+            width: 150px
+            margin-bottom: 12px
+            a
+              font-size: 16px
+              color: #3577ff
+              text-decoration: none
+          .title
+            color: #999
+            font-size: 14px
+            margin-left: 0
+      .time
+        display: flex
+        align-items: center    
+        margin-right: 10px
+        font-size: 12px
 .schedule-wrap 
   h1
     display: flex

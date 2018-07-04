@@ -276,7 +276,7 @@ e.exports=function(e){return null!=e&&(n(e)||r(e)||!!e._isBuffer)}},function(e,t
 
         var contentTpl = '<tr> <td class="bold">时间</td> {% for headerItem in headerData %}<td class="bold blue">{{headerItem}}</td>{% endfor %}</tr>{% for key, val in tableData %}<tr> <td>{{ key }}</td> {% for item in val %} <td> {% if item.topic %}<p class="blue"><a href="/detail/?number={{item.number}}" target="_blank">{{item.topic}}</a></p> <p>{{item.name}}</p>{% else %}<p class="blue">{{item}}</p> {% endif %}</td>{% endfor %} </tr>{% endfor %}';
 
-        var h5ContentTpl = '{% for key, val in tableData %}{% for item in val.schedules %} {% if speakerMap[item.number] && speakerMap[item.number].topic %} <div class="topic-item"><div class="content"> <div class="avatar"> <img src="{{speakerMap[item.number].avatar}}" /> </div> <div class="author-info"> <p class="name">{{ speakerMap[item.number].topic}}</p> <p class="title">{{speakerMap[item.number].name}}</p> </div> </div></div>{% endif %} {% if item.plan %}<div class="topic-item"><div class="title">{{item.plan}}</div></div>{% endif %} {% endfor %}{% endfor %}';
+        var h5ContentTpl = '{% for key, val in tableData %}<div class=" speaker-subject-branch "> <p class="speaker-subject-main-title">{{val.title}}</p> <p class="speaker-subject-main-content">{{val.description}}</p> </div>{% for item in val.schedules %} {% if speakerMap[item.number] && speakerMap[item.number].topic %} <div class="topic-item"><div class="content"> <div class="author-wrap"><div class="avatar"> <a href="/detail/?number={{item.number}}" target="_blank"><img src="{{speakerMap[item.number].avatar}}" /> </a></div> <div class="author-info"> <p class="name"><a href="/detail/?number={{item.number}}" target="_blank">{{ speakerMap[item.number].topic}}</a></p> <p class="title">{{speakerMap[item.number].name}}</p> </div></div><div class="time">{{speakerMap[item.number].time}}</div> </div></div>{% endif %} {% if item.plan %}<div class="topic-item"><div class="content"> <div class="author-wrap"><div class="avatar"></div> <div class="author-info"> <p class="name">{{item.plan}}</p> </div></div><div class="time">{{item.timeline}}</div> </div></div>{% endif %} {% endfor %}{% endfor %}';
 
         var contentOutput = swig.render(contentTpl, {
             locals: {
@@ -285,6 +285,7 @@ e.exports=function(e){return null!=e&&(n(e)||r(e)||!!e._isBuffer)}},function(e,t
             }
         });
 
+        console.log(data.subjectInfo.items)
         var h5ContentOutput = swig.render(h5ContentTpl, {
             locals: {
                 tableData: data.subjectInfo.items,
