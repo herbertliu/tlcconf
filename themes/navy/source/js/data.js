@@ -254,7 +254,7 @@ e.exports=function(e){return null!=e&&(n(e)||r(e)||!!e._isBuffer)}},function(e,t
         }
 
         for ( var i = 0; i < data.subjectInfo.items.length; i ++) {
-            headerData.push(data.subjectInfo.items[i].title);
+            headerData.push({title: data.subjectInfo.items[i].title, location: data.subjectInfo.items[i].location});
             for (var j = 0; j < data.subjectInfo.items[i].schedules.length; j ++) {
                 var timeline = data.subjectInfo.items[i].schedules[j].timeline;
                 var plan = data.subjectInfo.items[i].schedules[j].plan;
@@ -274,9 +274,9 @@ e.exports=function(e){return null!=e&&(n(e)||r(e)||!!e._isBuffer)}},function(e,t
             }
         }
 
-        var contentTpl = '<tr> <td class="bold">时间</td> {% for headerItem in headerData %}<td class="bold blue">{{headerItem}}</td>{% endfor %}</tr>{% for key, val in tableData %}<tr> <td>{{ key }}</td> {% for item in val %} <td> {% if item.topic %}<p class="blue"><a href="/detail/?number={{item.number}}" target="_blank">{{item.topic}}</a></p> <p>{{item.name}}</p>{% else %}<p class="blue">{{item}}</p> {% endif %}</td>{% endfor %} </tr>{% endfor %}';
+        var contentTpl = '<tr> <td class="bold">时间</td> {% for headerItem in headerData %}<td class="bold blue"><p>{{headerItem.title}}</p><p class="location">({{headerItem.location}})</p></td>{% endfor %}</tr>{% for key, val in tableData %}<tr> <td>{{ key }}</td> {% for item in val %} <td> {% if item.topic %}<p class="blue"><a href="/detail/?number={{item.number}}" target="_blank">{{item.topic}}</a></p> <p>{{item.name}}</p>{% else %}<p class="blue">{{item}}</p> {% endif %}</td>{% endfor %} </tr>{% endfor %}';
 
-        var h5ContentTpl = '{% for key, val in tableData %}<div class=" speaker-subject-branch "> <p class="speaker-subject-main-title">{{val.title}}</p> <p class="speaker-subject-main-content">{{val.description}}</p> </div>{% for item in val.schedules %} {% if speakerMap[item.number] && speakerMap[item.number].topic %} <div class="topic-item"><div class="content"> <div class="author-wrap"><div class="avatar"> <a href="/detail/?number={{item.number}}" target="_blank"><img src="{{speakerMap[item.number].avatar}}" /> </a></div> <div class="author-info"> <p class="name"><a href="/detail/?number={{item.number}}" target="_blank">{{ speakerMap[item.number].topic}}</a></p> <p class="title">{{speakerMap[item.number].name}}</p> </div></div><div class="time">{{speakerMap[item.number].time}}</div> </div></div>{% endif %} {% if item.plan %}<div class="topic-item"><div class="content"> <div class="author-wrap"><div class="avatar"></div> <div class="author-info"> <p class="name">{{item.plan}}</p> </div></div><div class="time">{{item.timeline}}</div> </div></div>{% endif %} {% endfor %}{% endfor %}';
+        var h5ContentTpl = '{% for key, val in tableData %}<div class="schedule-subject-branch "> <p class="schedule-subject-main-title">{{val.title}}</p> <p class="schedule-subject-main-content">{{val.location}}</p> </div>{% for item in val.schedules %} {% if speakerMap[item.number] && speakerMap[item.number].topic %} <div class="topic-item"><div class="content"> <div class="author-wrap"><div class="avatar"> <a href="/detail/?number={{item.number}}" target="_blank"><img src="{{speakerMap[item.number].avatar}}" /> </a></div> <div class="author-info"> <p class="name"><a href="/detail/?number={{item.number}}" target="_blank">{{ speakerMap[item.number].topic}}</a></p> <p class="title">{{speakerMap[item.number].name}}</p> </div></div><div class="time">{{speakerMap[item.number].time}}</div> </div></div>{% endif %} {% if item.plan %}<div class="topic-item"><div class="content"> <div class="author-wrap"><div class="avatar"></div> <div class="author-info"> <p class="name">{{item.plan}}</p> </div></div><div class="time">{{item.timeline}}</div> </div></div>{% endif %} {% endfor %}{% endfor %}';
 
         var contentOutput = swig.render(contentTpl, {
             locals: {
