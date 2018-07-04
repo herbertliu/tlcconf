@@ -64,12 +64,16 @@
 
 #footer-contact
   float: left
-  width: 360px
+  width: 100%
+  margin-bottom: 20px
   .contact .qq-group
     margin-bottom: 20px
   .qr-code img
     width: 160px
     height: 160px
+  @media mq-normal
+    width: 360px
+    margin-bottom: 0
 
 #footer-transport
   .location iframe
