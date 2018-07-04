@@ -1098,9 +1098,6 @@ body {
   -webkit-align-items: center;
   align-items: center;
 }
-.speaker-subject-items:nth-child(3n) {
-  margin-right: 0;
-}
 @media screen and (min-width: 769px) {
   .speaker-subject-items {
     float: left;
@@ -1108,6 +1105,9 @@ body {
     height: 160px;
     width: 388px;
     padding-left: 20px;
+  }
+  .speaker-subject-items:nth-child(3n) {
+    margin-right: 0;
   }
 }
 .speaker-subject-items .speaker-avatar {
@@ -1218,6 +1218,55 @@ body {
 @media screen and (min-width: 769px) {
   #schedule-wrap-h5 {
     display: none;
+  }
+}
+#schedule-wrap-h5 .schedule-subject-branch {
+  margin: 0 auto;
+  width: 358px;
+  height: 140px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  margin-bottom: 14px;
+  background: #fff;
+  text-align: center;
+}
+@media screen and (min-width: 769px) {
+  #schedule-wrap-h5 .schedule-subject-branch {
+    width: 1196px;
+    height: 280px;
+  }
+}
+#schedule-wrap-h5 .schedule-subject-branch .schedule-subject-main-title {
+  color: #535bff;
+  font-weight: bold;
+  width: 312px;
+  border-bottom: 1px dashed #000;
+  font-size: 16px;
+  padding: 20px 0 15px;
+  margin: 0 auto 30px;
+}
+@media screen and (min-width: 769px) {
+  #schedule-wrap-h5 .schedule-subject-branch .schedule-subject-main-title {
+    font-size: 32px;
+    padding: 60px 0px 30px;
+    margin: 0px auto 30px;
+    width: 370px;
+  }
+}
+#schedule-wrap-h5 .schedule-subject-branch .schedule-subject-main-content {
+  text-align: center;
+  font-size: 14px;
+  color: #000;
+  width: 300px;
+  line-height: 16px;
+  margin: 0px auto;
+}
+@media screen and (min-width: 769px) {
+  #schedule-wrap-h5 .schedule-subject-branch .schedule-subject-main-content {
+    font-size: 16px;
+    width: 600px;
+    line-height: 24px;
   }
 }
 #schedule-wrap-h5 .topic-item {
@@ -1404,6 +1453,9 @@ body {
 }
 .schedule-wrap .tab-content table p.author {
   margin-top: 10px;
+}
+.schedule-wrap .tab-content table p.location {
+  font-weight: normal;
 }
 .apply-wrap {
   overflow: hidden;
