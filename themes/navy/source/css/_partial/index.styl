@@ -607,21 +607,31 @@
   @media mq-normal
     display: none   
   .topic-item
-    margin-left: 12px
-    margin-top: 18px
-    padding: 5px 14px
-    border: 1px solid #187fc4
+    margin: 0 auto
+    width: 358px
+    height: 120px
+    background-color: rgb(255, 255, 255)
+    margin-bottom: 14px
+    display: flex
+    align-items: center
+    &:nth-child(3n)
+      margin-right: 0
+    @media mq-normal
+      float: left
+      margin-right: 16px
+      height: 160px
+      width: 388px
+      padding-left: 20px
     .title
-      margin-bottom: 6px
-      font-size: 15px
-      color: #3e3a39
+      font-size: 20px
+      color: #3577ff
     .content
       display: flex
       .avatar
         margin-right: 10px
         img
-          width: 55px
-          height: 55px
+          width: 90px
+          height: 90px
           border-radius: 50%
           border: 1px solid #dcdddd
       .author-info
@@ -629,12 +639,13 @@
         flex-direction: column
         justify-content: center
         .name
-          font-size: 15px
-          color: #187fc4
-          margin-bottom: 10px
+          font-size: 20px
+          color: #3577ff
+          line-height: 24px
+          margin-bottom: 12px
         .title
-          font-size: 12px
-          color: #898989
+          color: #999
+          font-size: 18px
 .schedule-wrap 
   h1
     display: flex
