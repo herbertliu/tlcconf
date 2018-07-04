@@ -1238,9 +1238,6 @@ body {
   -webkit-align-items: center;
   align-items: center;
 }
-#schedule-wrap-h5 .topic-item:nth-child(3n) {
-  margin-right: 0;
-}
 @media screen and (min-width: 769px) {
   #schedule-wrap-h5 .topic-item {
     float: left;
@@ -1251,8 +1248,9 @@ body {
   }
 }
 #schedule-wrap-h5 .topic-item .title {
-  font-size: 20px;
+  font-size: 16px;
   color: #3577ff;
+  margin-left: 10px;
 }
 #schedule-wrap-h5 .topic-item .content {
   display: -webkit-box;
@@ -1261,17 +1259,32 @@ body {
   display: -ms-flexbox;
   display: box;
   display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
 }
-#schedule-wrap-h5 .topic-item .content .avatar {
+#schedule-wrap-h5 .topic-item .content .author-wrap {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+}
+#schedule-wrap-h5 .topic-item .content .author-wrap .avatar {
+  width: 90px;
   margin-right: 10px;
 }
-#schedule-wrap-h5 .topic-item .content .avatar img {
+#schedule-wrap-h5 .topic-item .content .author-wrap .avatar img {
   width: 90px;
   height: 90px;
   border-radius: 50%;
   border: 1px solid #dcdddd;
 }
-#schedule-wrap-h5 .topic-item .content .author-info {
+#schedule-wrap-h5 .topic-item .content .author-wrap .author-info {
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -1289,15 +1302,37 @@ body {
   -webkit-justify-content: center;
   justify-content: center;
 }
-#schedule-wrap-h5 .topic-item .content .author-info .name {
-  font-size: 20px;
+#schedule-wrap-h5 .topic-item .content .author-wrap .author-info .name {
+  font-size: 16px;
   color: #3577ff;
   line-height: 24px;
+  width: 150px;
   margin-bottom: 12px;
 }
-#schedule-wrap-h5 .topic-item .content .author-info .title {
+#schedule-wrap-h5 .topic-item .content .author-wrap .author-info .name a {
+  font-size: 16px;
+  color: #3577ff;
+  text-decoration: none;
+}
+#schedule-wrap-h5 .topic-item .content .author-wrap .author-info .title {
   color: #999;
-  font-size: 18px;
+  font-size: 14px;
+  margin-left: 0;
+}
+#schedule-wrap-h5 .topic-item .content .time {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  margin-right: 10px;
+  font-size: 12px;
 }
 .schedule-wrap h1 {
   display: -webkit-box;
