@@ -5,10 +5,10 @@ function isWeiXin() {
 function shareWX() {
     function e() {
         return {
-            title: "机不可失！直播技术盛宴，深圳2017腾讯Live开发者大会(TLC)震撼来袭",
+            title: "前沿科技！探索直播无限可能，深圳腾讯2018TLC直播大会再度来袭",
             desc: "由腾讯Now直播IVWEB团队发起的专注于视频、直播、图像等领域的技术分享大会，大咖云集，干货满满等你来～",
             link: i,
-            imgUrl: "https://pub.idqqimg.com/pc/misc/files/20170908/c0dbce1b053b4458bb6e999360083aa6.png"
+            imgUrl: "https://qpic.url.cn/feeds_pic/Q3auHgzwzM7vqSndf7TQW6b9gDXXIwib4sa7BVXeRBsjlKSm7y6JvRQ/"
         }
     }
     function n(n) {
