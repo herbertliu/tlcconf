@@ -8,7 +8,7 @@
         {{ header_menu('main-nav') }}
       </nav>
       <div id="buy-ticket">
-        <a href="#" class="buy-ticket-link">立即购票</a>
+        <a href="https://www.bagevent.com/event/829116#website_moduleId_78112" class="buy-ticket-link" target="_blank">立即购票</a>
       </div>
       <div id="lang-select-wrap">
         <label id="lang-select-label"><i class="fa fa-globe"></i><span>简体中文</span></label>
