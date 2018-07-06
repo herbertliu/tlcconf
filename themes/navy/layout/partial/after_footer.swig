@@ -10,6 +10,7 @@
 {{ js('js/data') }}
 {{ js('js/carousel') }}
 {{ js('js/share')}}
+{{ js('js/mta')}}
 <!-- endbuild -->
 {% if page.layout === 'plugins' %}
 <!-- Plugin search -->
