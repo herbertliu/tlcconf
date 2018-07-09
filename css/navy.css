@@ -1153,6 +1153,9 @@ body {
 .speaker-wrap .tab-header {
   background: url("https://qpic.url.cn/feeds_pic/Q3auHgzwzM7Nic6SB9f5fIibbdLXuhzhQsR12zibUqic0icR4fc82ffg1KA/") center center;
   height: 400px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
 }
 .speaker-wrap .tab-header .inner {
   height: 400px;
@@ -1168,6 +1171,7 @@ body {
 @media screen and (min-width: 769px) {
   .speaker-wrap .tab-header .inner h1 {
     font-size: 36px;
+    margin-top: 142px;
   }
 }
 .speaker-wrap .tab-header .inner .tab-scroller-wrap {
@@ -1177,6 +1181,11 @@ body {
   overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
   width: 100%;
+}
+@media screen and (min-width: 769px) {
+  .speaker-wrap .tab-header .inner .tab-scroller-wrap {
+    overflow: hidden;
+  }
 }
 .speaker-wrap .tab-header .inner .tab-scroller-wrap .tab-items {
   width: 756px;
@@ -1405,6 +1414,9 @@ body {
 .schedule-wrap .tab-header {
   background: url("https://qpic.url.cn/feeds_pic/Q3auHgzwzM5Au48fl0sn9fvVIaDvpRFftZU3YP6rD4P4hIibaicLqr8A/") center center;
   height: 260px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
 }
 .schedule-wrap .tab-header .inner {
   height: 260px;
@@ -1637,6 +1649,22 @@ body {
     height: 59px;
     font-size: 16px;
     border-radius: 4px;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: box;
+    display: flex;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
   }
 }
 .detail-wrap {
