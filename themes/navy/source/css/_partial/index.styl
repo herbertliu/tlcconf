@@ -560,6 +560,7 @@
   .tab-header
     background: url('https://qpic.url.cn/feeds_pic/Q3auHgzwzM7Nic6SB9f5fIibbdLXuhzhQsR12zibUqic0icR4fc82ffg1KA/') center center
     height: 400px
+    background-size: cover
     .inner
       height: 400px
       position: relative
@@ -571,6 +572,7 @@
         letter-spacing: 8px
         @media mq-normal
           font-size: 36px
+          margin-top: 142px
       .tab-scroller-wrap
         position: absolute
         bottom: 0
@@ -578,6 +580,8 @@
         overflow-y: hidden
         -webkit-overflow-scrolling: touch
         width: 100%
+        @media mq-normal
+          overflow: hidden
         .tab-items 
           width: 756px
           @media mq-normal
@@ -708,6 +712,7 @@
   .tab-header
     background: url('https://qpic.url.cn/feeds_pic/Q3auHgzwzM5Au48fl0sn9fvVIaDvpRFftZU3YP6rD4P4hIibaicLqr8A/') center center
     height: 260px
+    background-size: cover
     .inner
       height: 260px
       position: relative
@@ -879,6 +884,9 @@
           height: 59px
           font-size: 16px
           border-radius: 4px
+          align-items: center
+          display: flex
+          justify-content: center
 
 .detail-wrap
   padding: 0 20px
