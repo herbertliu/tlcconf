@@ -40,6 +40,8 @@ e.exports=function(e){return null!=e&&(n(e)||r(e)||!!e._isBuffer)}},function(e,t
                     renderApplyPage(data);
                 } else if (/detail/.test(url)) {
                     renderDetailPage(data);
+                } else if (/publisher/.test(url)) {
+                    renderPublisherPage(data);
                 } else {
                     renderIndexPage(data);
                 }
@@ -88,7 +90,7 @@ e.exports=function(e){return null!=e&&(n(e)||r(e)||!!e._isBuffer)}},function(e,t
 
     var renderPublisher = function(publisherInfo) {
         
-        var publisherTpl = '{% for item in publisherItems %}  <li class="intro-user-item"> <a href="/subjects/" target="_blank"><img src="{{ item.avatar }}"></a> <div class="intro-user-info"> <p class="name"><a href="/subjects/" target="_blank">{{ item.name }}</a></p> <p class="desc">{{ item.brief }}</p> </div> </li>  {% endfor %}'
+        var publisherTpl = '{% for item in publisherItems %}  <li class="intro-user-item"> <a href="/publisher/?number={{item.number}}" target="_blank"><img src="{{ item.avatar }}"></a> <div class="intro-user-info"> <p class="name"><a href="/publisher/?number={{item.number}}" target="_blank">{{ item.name }}</a></p> <p class="desc">{{ item.brief }}</p> </div> </li>  {% endfor %}'
         var publisherOutput = swig.render(publisherTpl, {
             filename: '/publisherTpl',
             locals: {
@@ -372,6 +374,70 @@ e.exports=function(e){return null!=e&&(n(e)||r(e)||!!e._isBuffer)}},function(e,t
         };
 
         renderTopicInfo(data.subjectInfo);
+        renderFriendLink(data.friendlinkInfo);
+
+    }
+
+    var renderPublisherPage = function(data) {
+
+        var getUrlArgObject = function() {  
+            var args=new Object();  
+            var query=location.search.substring(1); 
+            var pairs=query.split(",");
+            for(var i=0;i<pairs.length;i++){  
+                var pos=pairs[i].indexOf('=');  
+                if(pos==-1){
+                    continue;  
+                }  
+                var argname=pairs[i].substring(0,pos);  
+                var value=pairs[i].substring(pos+1);  
+                args[argname]=unescape(value); 
+            }  
+            return args;
+        }  
+
+        var renderTopicInfo = function(data) {
+            var publisherInfo = data.publisherInfo;
+            var subjectInfo = data.subjectInfo;
+            var urlObject = getUrlArgObject();
+            var number = parseInt(urlObject['number']);
+            
+            var publisherItem;
+            for (var i = 0; i < publisherInfo.items.length; i ++) {
+                if (publisherInfo.items[i].number === number) {
+                    publisherItem = publisherInfo.items[i];
+                }
+            }
+
+            var speakerList = [];
+            for (var i = 0; i < subjectInfo.items.length; i ++) {
+                for (var j = 0; j < subjectInfo.items[i].speakers.length; j ++) {
+                    if (publisherItem.speakerIds.split(',').indexOf(subjectInfo.items[i].speakers[j].number.toString()) > -1) {
+                        var speakerItem = subjectInfo.items[i].speakers[j];
+                        speakerItem.branchName = subjectInfo.items[i].title;
+                        speakerList.push(speakerItem);
+                    }
+                }
+            }
+
+            publisherItem.speakerList = speakerList;
+
+            console.log(publisherItem)
+
+            
+
+            var contentTpl = '<div class="base-info"> <div> <div class="title">出品人：{{publisherItem.name}}</div> <div class="author">{{publisherItem.brief}}</div> </div> <div class="logo-url"> <img src="{{publisherItem.avatar}}" /> </div> </div> <div class="topic-detail"> <p>{{publisherItem.detail}}</p> </div><div class="speaker-list">{% for item in publisherItem.speakerList %}<div class="speaker-item"><div class="speaker-header"><div class="speaker-title">专题：{{item.topic}}</div>  <div class="location"><i></i> <div> <p class="key">地点</p> <p class="value">{{item.location}}</p> </div></div> </div><div class="speaker-detail">{{item.intro}}</div></div>{% endfor %}</div></div>'
+            var contentOutput = swig.render(contentTpl, {
+                locals: {
+                    publisherItem: publisherItem
+                }
+            });        
+            
+            $('#publisher-wrap').html(contentOutput);
+
+        };
+
+        renderTopicInfo(data);
         renderFriendLink(data.friendlinkInfo);
 
     }
