@@ -1964,11 +1964,16 @@ body {
   -ms-flex-pack: justify;
   -webkit-justify-content: space-between;
   justify-content: space-between;
+  margin-bottom: 30px;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
 }
 .publisher-wrap .speaker-list .speaker-item .speaker-header .speaker-title {
   font-size: 20px;
   color: #4766ff;
-  margin-bottom: 30px;
 }
 @media screen and (min-width: 769px) {
   .publisher-wrap .speaker-list .speaker-item .speaker-header .speaker-title {
@@ -1996,6 +2001,8 @@ body {
 @media screen and (min-width: 769px) {
   .publisher-wrap .speaker-list .speaker-item .speaker-header .location i {
     margin-right: 30px;
+    width: 45px;
+    height: 61px;
   }
 }
 .publisher-wrap .speaker-list .speaker-item .speaker-header .location .key {
