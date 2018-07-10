@@ -426,7 +426,7 @@ e.exports=function(e){return null!=e&&(n(e)||r(e)||!!e._isBuffer)}},function(e,t
 
             
 
-            var contentTpl = '<div class="base-info"> <div> <div class="title">出品人：{{publisherItem.name}}</div> <div class="author">{{publisherItem.brief}}</div> </div> <div class="logo-url"> <img src="{{publisherItem.avatar}}" /> </div> </div> <div class="topic-detail"> <p>{{publisherItem.detail}}</p> </div><div class="speaker-list">{% for item in publisherItem.speakerList %}<div class="speaker-item"><div class="speaker-header"><div class="speaker-title">专题：{{item.topic}}</div>  <div class="location"><i></i> <div> <p class="key">地点</p> <p class="value">{{item.location}}</p> </div></div> </div><div class="speaker-detail">{{item.intro}}</div></div>{% endfor %}</div></div>'
+            var contentTpl = '<div class="base-info"> <div> <div class="title">出品人：{{publisherItem.name}}</div> <div class="author">{{publisherItem.brief}}</div> </div> <div class="logo-url"> <img src="{{publisherItem.avatar}}" /> </div> </div> <div class="topic-detail"> <p>{{publisherItem.detail}}</p> </div><div class="speaker-list">{% for item in publisherItem.speakerList %}<div class="speaker-item"><div class="speaker-header"><div class="speaker-title"><a href="/detail/?number={{item.number}}" target="_blank">专题：{{item.topic}}</a></div>  <div class="location"><i></i> <div> <p class="key">地点</p> <p class="value">{{item.location}}</p> </div></div> </div><div class="speaker-detail">{{item.intro}}</div></div>{% endfor %}</div></div>'
             var contentOutput = swig.render(contentTpl, {
                 locals: {
                     publisherItem: publisherItem
