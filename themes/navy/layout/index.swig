@@ -3,7 +3,7 @@
     <div class="inner">
       <div id="banner-bio">2018年8月18日·深圳科兴科学园国际会议中心</div>
       <div id="banner-buttons">
-        <a href="https://www.bagevent.com/event/829116#website_moduleId_78112" class="buy-ticket" target="_blank">立即购票</a>
+        <a href="https://www.bagevent.com/widget/ticket/829116" class="buy-ticket" target="_blank">立即购票</a>
       </div>
     </div>
   </div>
