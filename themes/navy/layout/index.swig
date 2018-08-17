@@ -5,6 +5,9 @@
       <div id="banner-buttons">
         <a href="https://www.bagevent.com/widget/ticket/829116" class="buy-ticket" target="_blank">立即购票</a>
       </div>
+      <div id="live">
+        <a href="http://www.itdks.com/eventlist/detail/2525" class="buy-ticket" target="_blank"><img src="https://qpic.url.cn/feeds_pic/Q3auHgzwzM4wL3ExSk73PJ1A9Wd0xbd2bnyWH9ibycFjFO84m5HEiccA/"></a>
+      </div>
     </div>
   </div>
 </header>
