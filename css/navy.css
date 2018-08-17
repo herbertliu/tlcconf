@@ -356,6 +356,7 @@ body {
   height: 100%;
 }
 #banner .inner {
+  position: relative;
   height: 100%;
   display: -ms-flexbox;
   display: -webkit-box;
@@ -447,6 +448,14 @@ body {
     font-size: 24px;
     width: auto;
   }
+}
+#live {
+  position: absolute;
+  right: 320px;
+  margin-top: -18px;
+}
+#live img {
+  width: 83px;
 }
 #banner-start {
   text-align: center;
