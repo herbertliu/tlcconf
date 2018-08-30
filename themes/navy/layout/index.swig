@@ -9,7 +9,7 @@
         <a href="https://ke.qq.com/course/328075?tuin=c5418f3a" class="buy-ticket" target="_blank"><img src="https://qpic.url.cn/feeds_pic/Q3auHgzwzM4wL3ExSk73PJ1A9Wd0xbd2bnyWH9ibycFjFO84m5HEiccA/"></a>
       </div>
       <div id="resources">
-        TLC大会于8月18日完美落幕，谢谢参会者与讲师们的支持，大会<a href="https://ivweb.io/topic/5b7bfb06ece8df44818b3d60" target="_blank">精彩回顾</a>、<a href="https://github.com/iv-web/ppts" target="_blank">讲师PPT</a>、<a href="https://ke.qq.com/course/328075?tuin=c5418f3a" target="_blank">视频回放</a>
+        <a href="https://ivweb.io/topic/5b7bfb06ece8df44818b3d60" target="_blank">精彩回顾</a>、<a href="https://github.com/iv-web/ppts" target="_blank">讲师PPT</a>、<a href="https://ke.qq.com/course/328075?tuin=c5418f3a" target="_blank">视频回放</a>
       </div>
     </div>
   </div>
