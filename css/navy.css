@@ -468,6 +468,11 @@ body {
     width: 83px;
   }
 }
+#resources {
+  position: absolute;
+  bottom: 80px;
+  font-size: 14px;
+}
 #banner-start {
   text-align: center;
   padding: 40px 0;
